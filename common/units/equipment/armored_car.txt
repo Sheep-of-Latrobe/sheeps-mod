@@ -4,13 +4,6 @@ equipments = {
 
 	armored_car_equipment = {
 		year = 1939
-
-		can_be_produced = {
-			OR = {
-				original_tag = SWE
-				is_ai = no
-			}
-		}
 	
 		is_archetype = yes
 		is_buildable = no
@@ -31,10 +24,10 @@ equipments = {
 		#Misc Abilities
 		maximum_speed 	= 12
 		reliability 	= 0.8
-		recon 		= 0.25
+		#recon 			= 2
 
 		#Defensive Abilities
-		defense 		= 3.5
+		defense 		= 3
 		breakthrough 	= 16
 		hardness 		= 0.65
 		armor_value 	= 10
@@ -73,17 +66,17 @@ equipments = {
 		#recon 			= 1
 
 		#Defensive Abilities
-		defense 		= 2.5
+		defense 		= 2
 		breakthrough 	= 12
 		armor_value 	= 3
 
 		#Offensive Abilities
-		soft_attack 	= 8
+		soft_attack 	= 6
 		hard_attack 	= 2
 		ap_attack 		= 6
 		air_attack 		= 0
 
-		build_cost_ic 		= 3 
+		build_cost_ic 		= 3
 		fuel_consumption 	= 0.8
 	}
 
@@ -112,10 +105,10 @@ equipments = {
 		maximum_speed 	= 15
 
 		#Defensive Abilities
-		defense 		= 7.5
+		defense 		= 5
 		breakthrough 	= 28
-		hardness 		= 0.75
-		armor_value 	= 22
+		hardness 		= 0.70
+		armor_value 	= 20
 		#recon 			= 2
 
 		#Offensive Abilities
@@ -148,18 +141,18 @@ equipments = {
 		#recon 			= 1
 
 		#Defensive Abilities
-		defense 		= 7.5
+		defense 		= 6
 		breakthrough 	= 28
-		hardness 		= 0.75
-		armor_value 	= 22
+		hardness 		= 0.70
+		armor_value 	= 20
 
 		#Offensive Abilities
-		soft_attack 	= 14.5
-		hard_attack 	= 18
-		ap_attack 		= 70
-		air_attack 		= 1
+		soft_attack 	= 12
+		hard_attack 	= 14
+		ap_attack 		= 62
+		air_attack 		= 0
 		
-		build_cost_ic 	= 7
+		build_cost_ic 	= 7.5
 		resources = {
 			#oil 		= 1
 			steel 		= 2

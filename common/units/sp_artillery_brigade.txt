@@ -36,7 +36,8 @@ sub_units = {
 		supply_consumption = 0.42
 
 		breakthrough = -0.42
-		soft_attack = 0.15
+		soft_attack = 0.05
+		hard_attack = -0.1
 		suppression = 1.25
 
 		forest = {
@@ -103,7 +104,8 @@ sub_units = {
 		supply_consumption = 0.42
 
 		breakthrough = -0.25
-		soft_attack = 0.15
+		soft_attack = 0.05
+		hard_attack = -0.1
 		suppression = 1.5
 
 		forest = {
@@ -173,7 +175,8 @@ sub_units = {
 		supply_consumption = 0.6
 
 		breakthrough = -0.25
-		soft_attack = 0.15
+		soft_attack = 0.05
+		hard_attack = -0.1
 		suppression = 1.5
 
 		forest = {
@@ -247,7 +250,8 @@ sub_units = {
 		supply_consumption = 0.8
 
 		breakthrough = -0.25
-		soft_attack = 0.15
+		soft_attack = 0.05
+		hard_attack = -0.1
 		suppression = 1.25
 
 		forest = {
@@ -317,7 +321,8 @@ sub_units = {
 		supply_consumption = 0.5
 		
 		breakthrough = -0.25
-		soft_attack = 0.15
+		soft_attack = 0.05
+		hard_attack = -0.1
 		suppression = 1.5
 
 		forest = {
