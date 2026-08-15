@@ -117,6 +117,7 @@ last_stand = {
 		is_major = no
 		check_if_tag_needs_to_withdraw_from_europe = no
         }
+    }
 
     rewards = {
         werwolf_groups = {
