@@ -789,8 +789,8 @@ technologies = {
 			modifier = {
 				add = 30
 				tag = GER
-				has_tech = special_forces_mountaineers
-				has_tech = special_forces_marines
+				has_tech = tech_mountaineers
+				has_tech = marines
 			}
 		}
 	}

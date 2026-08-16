@@ -5539,8 +5539,8 @@ last_stand_decision = {
 				has_equipment = { infantry_equipment > 150000 }
 				has_manpower > 3000000
 				has_war_with = SOV
-				has_tech = ski_troops
-				SOV = { NOT = { has_tech = ski_troops } }
+				has_tech = mountaineers_1
+				SOV = { NOT = { has_tech = mountaineers_1 } }
 				winter_months_are_so_peak = yes
 				SOV = {
 					has_country_flag = {
@@ -9164,7 +9164,7 @@ last_stand_decision = {
 			tag = POL
 			has_war = yes
 			is_ai = yes
-			has_tech = special_forces_mountaineers
+			has_tech = tech_mountaineers
 			has_army_experience > 14
 			is_historical_focus_on = yes
 			has_equipment = { support_equipment > 900 }

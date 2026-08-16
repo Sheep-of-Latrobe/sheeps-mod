@@ -58,7 +58,7 @@ infantry_generic_ahist = {
 			modifier = {
 				factor = 0
 				AND = {
-					has_tech = special_forces_mountaineers
+					has_tech = tech_mountaineers
 					has_tech = rocket_artillery
 				}
 			}
@@ -102,7 +102,7 @@ infantry_generic_ahist = {
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { has_tech = special_forces_mountaineers }
+					NOT = { has_tech = tech_mountaineers }
 					NOT = { has_tech = rocket_artillery }
 				}
 			}

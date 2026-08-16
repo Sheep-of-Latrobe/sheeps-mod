@@ -60,7 +60,7 @@ armored_USA= {
 			}
 			modifier = {
 				factor = 0
-				has_tech = special_forces_mountaineers
+				has_tech = tech_mountaineers
 			}
 		}
 		reinforce_prio = 2
@@ -102,7 +102,7 @@ armored_USA= {
 			}
 			modifier = {
 				factor = 0
-				NOT = { has_tech = special_forces_mountaineers }
+				NOT = { has_tech = tech_mountaineers }
 			}
 		}
 		reinforce_prio = 2
@@ -265,7 +265,7 @@ infantry_USA = {
 				OR = {
 					NOT = { has_dlc = "Arms Against Tyranny" }
 					has_country_flag = american_airline 
-					has_tech = special_forces_marines
+					has_tech = marines
 				}
 			}
 		}
@@ -299,7 +299,7 @@ infantry_USA = {
 				OR = {
 					NOT = { has_dlc = "Arms Against Tyranny" }
 					has_country_flag = american_airline 
-					NOT = { has_tech = special_forces_marines }
+					NOT = { has_tech = marines }
 				}
 			}
 		}
@@ -408,8 +408,8 @@ mountaineers_USA = {
 			modifier = {
 				factor = 0
 				AND = {
-					has_tech = special_forces_mountaineers
-					has_tech = special_forces_marines
+					has_tech = tech_mountaineers
+					has_tech = marines
 				}
 			}
 		}
@@ -446,8 +446,8 @@ mountaineers_USA = {
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { has_tech = special_forces_mountaineers }
-					NOT = { has_tech = special_forces_marines }
+					NOT = { has_tech = tech_mountaineers }
+					NOT = { has_tech = marines }
 				}
 			}
 		}
@@ -528,8 +528,8 @@ marines_USA = {
 			modifier = {
 				factor = 0
 				AND = {
-					has_tech = special_forces_mountaineers
-					has_tech = special_forces_marines
+					has_tech = tech_mountaineers
+					has_tech = marines
 				}
 			}
 		}
@@ -566,8 +566,8 @@ marines_USA = {
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { has_tech = special_forces_mountaineers }
-					NOT = { has_tech = special_forces_marines }
+					NOT = { has_tech = tech_mountaineers }
+					NOT = { has_tech = marines }
 				}
 			}
 		}
@@ -655,8 +655,8 @@ paratroopers_USA = {
 			modifier = {
 				factor = 0
 				AND = {
-					has_tech = special_forces_mountaineers
-					has_tech = special_forces_marines
+					has_tech = tech_mountaineers
+					has_tech = marines
 				}
 			}
 		}
@@ -693,8 +693,8 @@ paratroopers_USA = {
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { has_tech = special_forces_mountaineers }
-					NOT = { has_tech = special_forces_marines }
+					NOT = { has_tech = tech_mountaineers }
+					NOT = { has_tech = marines }
 				}
 			}
 		}

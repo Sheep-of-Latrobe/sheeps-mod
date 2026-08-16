@@ -117,15 +117,15 @@ SOV_has_ongoing_offensive = {
 	}
 }
 has_ranger_pioneer = {
-	has_tech = special_forces_mountaineers
-	has_tech = special_forces_marines
+	has_tech = tech_mountaineers
+	has_tech = marines
 }
 
 has_ranger = {
-	has_tech = special_forces_mountaineers
+	has_tech = tech_mountaineers
 }
 has_pioneer = {
-	has_tech = special_forces_marines
+	has_tech = marines
 }
 can_equip_militia = {
 	OR = {
@@ -173,7 +173,7 @@ has_assault_engineer = {
 has_all_the_fancy_stuffs = {
 	has_tech = tech_field_hospital
 	has_tech = tech_logistics_company
-	has_tech = special_forces_mountaineers
+	has_tech = tech_mountaineers
 	OR = {
 		has_tech = tech_engineers2
 		is_special_project_completed = sp:sp_land_flamethrower_tank
@@ -1378,7 +1378,7 @@ AI_need_pure_meat = {
 	}
 }
 epic_winter_month = {
-	has_tech = ski_troops
+	has_tech = mountaineers_1
 	any_enemy_country = {
 		is_major = yes
 		capital_scope = {
