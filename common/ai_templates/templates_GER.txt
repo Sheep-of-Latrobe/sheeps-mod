@@ -1435,7 +1435,7 @@ infantry_GER = {
 					has_army_manpower = { size < 600000 }
 					has_assault_engineer = no
 					NOT = { has_tech = sturmtruppe_battalion_tech }
-					has_tech = mountaineers_1
+					has_tech = tech_mountaineers2
 				}
 			}
 		}
@@ -1474,7 +1474,7 @@ infantry_GER = {
 					has_army_manpower = { size < 600000 }
 					has_assault_engineer = no
 					NOT = { has_tech = sturmtruppe_battalion_tech }
-					NOT = { has_tech = mountaineers_1 }
+					NOT = { has_tech = tech_mountaineers2 }
 				}
 			}
 		}
