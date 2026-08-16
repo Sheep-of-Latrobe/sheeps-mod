@@ -1378,7 +1378,7 @@ AI_need_pure_meat = {
 	}
 }
 epic_winter_month = {
-	has_tech = mountaineers_1
+	has_doctrine = mountaineers_1
 	any_enemy_country = {
 		is_major = yes
 		capital_scope = {

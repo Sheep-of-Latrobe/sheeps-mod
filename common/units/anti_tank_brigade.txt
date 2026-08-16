@@ -84,7 +84,7 @@ sub_units = {
 			motorized
 			anti_tank
 		}
-		TODO: Should this be group = mobile_combat_support ??
+		#TODO: Should this be group = mobile_combat_support ??
 		group = mobile
 		
 		categories = {

@@ -5539,8 +5539,8 @@ last_stand_decision = {
 				has_equipment = { infantry_equipment > 150000 }
 				has_manpower > 3000000
 				has_war_with = SOV
-				has_tech = mountaineers_1
-				SOV = { NOT = { has_tech = mountaineers_1 } }
+				has_doctrine = mountaineers_1
+				SOV = { NOT = { has_doctrine = mountaineers_1 } }
 				winter_months_are_so_peak = yes
 				SOV = {
 					has_country_flag = {
