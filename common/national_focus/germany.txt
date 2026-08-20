@@ -29948,14 +29948,6 @@ focus_tree = {
 			}
 			GFX_focus_GER_german_hegemony_in_the_middle_east_neutrality = yes
 		}
-		icon = {
-			trigger = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			value = GFX_focus_GER_german_hegemony_in_the_middle_east_neutrality
-		} 
 
 		prerequisite = { focus = GER_conquer_italy focus = GER_european_confederation focus = GER_align_italy focus = GER_prepare_italian_coup_ww }
 		mutually_exclusive = { focus = GER_bring_turkey_into_the_fold }

@@ -9,7 +9,7 @@
  #################### 
 
 CZE_ckd_organization = {
-	include = generic_tank_organization
+	include = generic_mobile_tank_organization
 	icon = GFX_idea_CZE_ckd
 
 	allowed = {
@@ -189,7 +189,7 @@ CZE_tatra_organization = {
 }
 
 CZE_skoda_armor_organization = {
-	include = generic_infantry_tank_organization
+	include = generic_tank_organization
 	icon = GFX_idea_CZE_skoda_armor
 
 	allowed = {
@@ -204,6 +204,11 @@ CZE_skoda_armor_organization = {
 				tag = HUN
 				has_dlc = "Gotterdammerung"
 			}
+			AND = {
+            	tag = PER
+            	has_dlc = "Graveyard of Empires"
+            	has_dlc = "Arms Against Tyranny"
+            }
 		}
 	}
 
@@ -215,6 +220,10 @@ CZE_skoda_armor_organization = {
 		IF = {
 			limit = { FROM = { original_tag = HUN } }
 			FROM = { has_completed_focus = wuw_HUN_integrate_bohemian_and_austrian_industries }
+		}
+		IF = {
+			limit = { FROM = { original_tag = PER } }
+			FROM = { has_completed_focus = PER_czech_tanks }
 		}
 	}
 
@@ -237,6 +246,10 @@ CZE_skoda_armor_organization = {
 					has_country_flag = has_invited_CZE_skoda_armor_organization_flag
 				}
 			}
+		}
+		IF = {
+			limit = { FROM = { original_tag = PER } }
+			FROM = { has_completed_focus = PER_czech_tanks }
 		}
 	}
 
@@ -549,7 +562,19 @@ CZE_skoda_shipyards_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_CZE_skoda_shipyards
 	allowed = {
-		tag = CZE
+		OR = {
+			tag = CZE
+			tag = RKH
+		}
+	}
+
+	equipment_type = {
+		mio_cat_eq_all_cruiser
+		mio_cat_eq_all_destroyer
+	}
+
+	research_categories = {
+		naval_equipment
 	}
 }
 
