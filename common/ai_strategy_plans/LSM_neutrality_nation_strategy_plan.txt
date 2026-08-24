@@ -1,6 +1,6 @@
 LSM_neutrality_historical = {
 	name = "MA"
-	desc = "TA"
+	desc = "LSM_neutrality_historical_desc"
 
 	allowed = {
 		always = yes

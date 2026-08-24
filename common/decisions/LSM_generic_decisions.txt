@@ -20803,7 +20803,7 @@ last_stand_decision = {
 		fire_only_once = yes
 
 		complete_effect = {
-			custom_effect_tooltip = "Endsieg?"
+			custom_effect_tooltip = LSM_endsieg_tt
 			hidden_effect = { 
 				set_country_flag = i_want_cheese
 			}

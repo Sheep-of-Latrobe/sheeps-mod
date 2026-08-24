@@ -370,7 +370,7 @@ country_event = {
 
 		ai_chance = { factor = 10 }
 
-		custom_effect_tooltip = "Yeehaw!"
+		custom_effect_tooltip = LSM_GER_SOV_102_intervene_tt
 
 		USA = {
 			declare_war_on = { target = CAN type = annex_everything }
@@ -688,7 +688,7 @@ country_event = {
 
 		ai_chance = { factor = 25 }
 
-		custom_effect_tooltip = "Why?"
+		custom_effect_tooltip = LSM_GER_SOV_6_reject_tt
 
 		SOV = {
 			country_event = {

@@ -62,7 +62,7 @@ JAP_imperial_territory: "Imperial Treaty Territory"
 JAP_demand_puppet_manpower: "Demand Conscription from [FROM.GetNameDef]"
 JAP_demand_puppet_manpower_desc: "Where the Empire demands, her imperial subject must comply."
 LSM_equipment.29.t: "Japan demands our conscription"
-LSM_equipment.29.d: "Our overlord in Japan has demanded us to raise conscription for their war efforts. Considering our relationship, an appropriate respond must be made to this request in due time.
+LSM_equipment.29.d: "Our overlord in Japan has demanded us to raise conscription for their war efforts. Considering our relationship, an appropriate response must be made to this request in due time."
 LSM_equipment.29.a: "Their wish is our command"
 LSM_equipment.29.b: "We must accept for now"
 LSM_equipment.29.c: "They are being unreasonable!"
@@ -110,7 +110,7 @@ LSM_SOV_molotov_ribbentrop_is_important_3_tt: "At most two weeks have passed sin
 LSM_GER_SOV.505.a: "The enemy of our enemy?"
 LSM_GER_SOV.505.b: "There shall be no friendship amongst us"
 LSM_GER_SOV.505.t: "Formation of the Berlin-Moscow Axis"
-LSM_GER_SOV.505.d: "In face of the diplomatical landscape having shifted since the beginning of the Second of World War, the mutual understanding of the Soviet Union and the German Reich 
+LSM_GER_SOV.505.d: "In the face of the diplomatic landscape having shifted since the beginning of the Second World War, the mutual understanding of the Soviet Union and the German Reich has grown into an alliance of convenience."
 ENG_a_change_in_course_tt: "§RIncreased political power cost for national spirits and characters by 100%.§!\n\n§CThis effect will be removed when the UK is no longer democratic and replaced with a better modifier.§!"
 ENG_a_change_in_course_idea_2: "A Course Realigned"
 ENG_a_change_in_course_2_tt: "§CReduced political power cost for government ideas by §!§G-15%§!."
