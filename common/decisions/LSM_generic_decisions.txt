@@ -203,23 +203,6 @@ frontline_decision = {
 				FROM.OWNER = { has_war_with = ROOT }	
 				FROM.OWNER = { is_major = yes }
 			}
-		}
-
-		visible = {
-			if = {
-				limit = { has_global_flag = mp_difficulty }
-				is_faction_leader = yes
-			}
-			NOT = { any_country = { has_country_flag = LSM_designated_target } }
-			has_country_flag = LSM_designated_target_enabled
-		}
-
-		allowed = {
-			always = yes
-		}
-		on_map_mode = map_only
-		state_target = yes
-		target_trigger = {
 			FROM = {
 				OR = {
 					AND = {
@@ -241,6 +224,21 @@ frontline_decision = {
 				}
 			}
 		}
+
+		visible = {
+			if = {
+				limit = { has_global_flag = mp_difficulty }
+				is_faction_leader = yes
+			}
+			NOT = { any_country = { has_country_flag = LSM_designated_target } }
+			has_country_flag = LSM_designated_target_enabled
+		}
+
+		allowed = {
+			always = yes
+		}
+		on_map_mode = map_only
+		state_target = yes
 
 		fire_only_once = no
 
@@ -383,6 +381,19 @@ frontline_decision = {
 				FROM.OWNER = { has_war_with = ROOT }	
 				FROM.OWNER = { is_major = yes }
 			}
+			FROM = {
+				controller = { has_war_with = ROOT }
+				any_neighbor_state = {
+					controller = {
+						OR = {
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+				NOT = { has_state_flag = LSM_designated_state_target }
+			}
 		}
 
 		visible = {
@@ -399,21 +410,6 @@ frontline_decision = {
 		}
 		on_map_mode = map_only
 		state_target = yes
-		target_trigger = {
-			FROM = {
-				controller = { has_war_with = ROOT }
-				any_neighbor_state = {
-					controller = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-							is_subject_of = ROOT
-						}
-					}
-				}
-				NOT = { has_state_flag = LSM_designated_state_target }
-			}
-		}
 
 		fire_only_once = no
 
@@ -3526,12 +3522,17 @@ political_actions = {
 			}
 			hidden_effect = {
 				set_country_flag = lowered_trade_with_axis
-				every_country = {
-					limit = {
-						has_opinion_modifier = trade_preference_to_germany
-					}
-					remove_opinion_modifier = {
-						modifier = trade_preference_to_germany
+				every_other_country = {
+					ROOT = {
+						if = {
+							limit = {
+								has_opinion_modifier = trade_preference_to_germany
+							}
+							remove_opinion_modifier = {
+								target = PREV
+								modifier = trade_preference_to_germany
+							}
+						}
 					}
 				}
 				if = {
@@ -20800,8 +20801,6 @@ last_stand_decision = {
 			has_war = yes	
 		}
 		
-		fire_only_once = yes
-
 		complete_effect = {
 			custom_effect_tooltip = "Endsieg?"
 			hidden_effect = { 

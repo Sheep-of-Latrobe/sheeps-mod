@@ -177,10 +177,6 @@ SOV_better_cas = {
 	priority = {
 		factor = 100
 	}
-
-	priority = {
-		factor = 100
-	}
 	cas_0 = { #Hs 123
 		priority = {
 			factor = 10

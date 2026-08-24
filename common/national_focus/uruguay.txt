@@ -455,9 +455,6 @@ focus_tree = {
 			NOT = { has_completed_focus = URG_blanco_victory }
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
 		prerequisite = { focus = URG_allow_nazi_movements_among_german_uruguayan focus = URG_merge_falangist_movements }
 		icon = GFX_focus_generic_fascist_troops
 		x = -1

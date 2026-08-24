@@ -5482,8 +5482,6 @@ focus_tree = {
 				has_government = fascism
 			}
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_adopt_the_26_points focus = SPA_settle_the_succession_question }
 		mutually_exclusive = { focus = SPA_dictator_for_life }
 		

@@ -331,10 +331,6 @@ focus_tree = {
         }
 
         available = {
-
-        }
-
-        available = {
             AFG = {
                 NOT = {
                     has_completed_focus = AFG_invite_the_mughal_prince

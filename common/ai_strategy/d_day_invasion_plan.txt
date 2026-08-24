@@ -569,6 +569,7 @@ d_day_europe_on_the_beach_italy = {
 	ai_strategy = {
 		type = force_defend_ally_borders
 		target = italy
+		value = 500
 	}
 
 	ai_strategy = {

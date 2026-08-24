@@ -1328,7 +1328,6 @@ ideas = {
 		}
 
 		SOV_reward_the_children = {
-			picture = EST_exploit_the_banks
 			allowed = {
 				always = no
 			}
@@ -1353,7 +1352,6 @@ ideas = {
 		}
 
 		SOV_reward_the_administration = {
-			picture = EST_exploit_the_banks
 			allowed = {
 				always = no
 			}
@@ -1376,7 +1374,6 @@ ideas = {
 		}
 
 		SOV_reward_the_working_class = {
-			picture = EST_exploit_the_banks
 			allowed = {
 				always = no
 			}
@@ -1401,7 +1398,6 @@ ideas = {
 		}
 
 		SOV_reward_the_military = {
-			picture = EST_exploit_the_banks
 			allowed = {
 				always = no
 			}
