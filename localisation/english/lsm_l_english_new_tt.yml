@@ -32,7 +32,7 @@ emergency_factory_conversion_USA: "Wartime Industrial Mobilisation"
 LSM_startup.11.aa: "Mass Assault Infantry (Bery Stronk)"
 startup_10d_tt: "§C---Lotta Infanterie Germany. Strength unclear. Is probably not very good---§!"
 
-SWE_cut_the_trade_to_allies: "Enact Preferential Trade Deal with [GER.GetNameDef]
+SWE_cut_the_trade_to_allies: "Enact Preferential Trade Deal with [GER.GetNameDef]"
 trade_preference_to_germany: "German-Dominated Trade Influence"
 trade_preference_to_soviet: "Soviet-Dominated Trade Influence"
 URG_emergency_factory_conversion_defensive: "Rural Industrialisation Appropriation"

@@ -62,7 +62,7 @@ JAP_imperial_territory: "Imperial Treaty Territory"
 JAP_demand_puppet_manpower: "Demand Conscription from [FROM.GetNameDef]"
 JAP_demand_puppet_manpower_desc: "Where the Empire demands, her imperial subject must comply."
 LSM_equipment.29.t: "Japan demands our conscription"
-LSM_equipment.29.d: "Our overlord in Japan has demanded us to raise conscription for their war efforts. Considering our relationship, an appropriate respond must be made to this request in due time.
+LSM_equipment.29.d: "Our overlord in Japan has demanded us to raise conscription for their war efforts. Considering our relationship, an appropriate response must be made to this request in due time."
 LSM_equipment.29.a: "Their wish is our command"
 LSM_equipment.29.b: "We must accept for now"
 LSM_equipment.29.c: "They are being unreasonable!"
@@ -110,7 +110,7 @@ LSM_SOV_molotov_ribbentrop_is_important_3_tt: "At most two weeks have passed sin
 LSM_GER_SOV.505.a: "The enemy of our enemy?"
 LSM_GER_SOV.505.b: "There shall be no friendship amongst us"
 LSM_GER_SOV.505.t: "Formation of the Berlin-Moscow Axis"
-LSM_GER_SOV.505.d: "In face of the diplomatical landscape having shifted since the beginning of the Second of World War, the mutual understanding of the Soviet Union and the German Reich 
+LSM_GER_SOV.505.d: "In the face of the diplomatic landscape having shifted since the beginning of the Second World War, the mutual understanding of the Soviet Union and the German Reich has grown into an alliance of convenience."
 ENG_a_change_in_course_tt: "§RIncreased political power cost for national spirits and characters by 100%.§!\n\n§CThis effect will be removed when the UK is no longer democratic and replaced with a better modifier.§!"
 ENG_a_change_in_course_idea_2: "A Course Realigned"
 ENG_a_change_in_course_2_tt: "§CReduced political power cost for government ideas by §!§G-15%§!."
@@ -124,7 +124,7 @@ CZE_deal_with_austria: "Deal with [AUS.GetNameDef]"
 CZE_deal_with_austria_desc: "The former crownlands of the since crumbled empire shall once again be united - this time under the protection of [CZE.GetNameDef]."
 endsieg_idea_member: "Endsieg - The Final Struggle"
 LSM_surrender_limit: "Shock of Defeat (Ally)"
-surrender_limit_tt: "\n§RThe duration will extend by 2 weeks if any other allied country with this national spirit capitulates.§!"
+LSM_surrender_limit_tt: "\n§RThe duration will extend by 2 weeks if any other allied country with this national spirit capitulates.§!"
 SWI_frozen_assets_tt: "This national spirit will be removed as soon as Switzerland capitulates."
 HOL_relocated_resource_to_army: "Allocating Resources to Army Organisation"
 HOL_relocated_resource_to_technology: "Allocating Resources to Technological Improvement"
@@ -136,7 +136,6 @@ LSM_equipment.28.a: "Freedom's Safest Place!"
 startup_10a_tt: "§G+Fast tanks go vrrooom vrrooom.§!\n\n§R-Weakest doctrine for Germany AI if you can solidly hold.§!\n§G+Strongest doctrine for Germany AI if you are falling apart§!"
 startup_10b_tt: "§CRecommend option:§!\n§G+Balanced and better overall performance for Germany AI.§!"
 startup_10c_tt: "§R---Filled with Blursed Germany build that might kill players sometimes---§!"
-startup_10d_tt: "§R---Light tanks Germany. If you are unworthy, you shall die very quickly---§!"
 startup_10e_tt: "§R---Spacemarine Germany. Very hard to tell whether it works---§!"
 startup_10g_tt: "§R---Vrroooomm Vrroooommmm VRRROOOOMMMMMMMM---§!"
 startup_1a_tt: "§CRecommend option:§!\n§G+Balanced and better overall performance for Soviet AI.§!"
@@ -236,8 +235,6 @@ LSM_prepare_for_war_2: "Emergency Training Program"
 ENG_english_electric_organization: "English Electric"
 
 FRA_mas_support_organization: "MAS Electronic Division"
-
-training_is_good: "AI is at peace"
 
 training_is_alright: "AI is at war"
 
@@ -748,14 +745,6 @@ trade_relation_bonus_high_4: "Mutual Economic Treaty"
 trade_relation_bonus_high_5: "Long-term Trade Partners"
 
 trade_relation_non_faction: "Non-faction Economic Avoidance"
-
-AI_plane_licensing: "Airplane Licensing"
-
-AI_mech_licensing: "Mech Licensing"
-
-AI_gun2_licensing: "Infantry Weapon Licensing II"
-
-AI_gun3_licensing: "Infantry Weapon Licensing III"
 
 destroyer_of_world: "Head of the Anti-Exploiter Committee"
 

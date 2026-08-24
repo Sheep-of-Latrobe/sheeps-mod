@@ -610,7 +610,7 @@ improving_our_army_category = {
 					original_tag = CHL
 				}
 				custom_effect_tooltip = CHL_modify_chilean_army_ns_intro
-				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = artillery_attack_factor_tt }
+				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
 				add_to_variable = { JUNO_army_modifier_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 			}
 			ELSE_IF = {
@@ -618,7 +618,7 @@ improving_our_army_category = {
 					original_tag = BRA
 				}
 				custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = artillery_attack_factor_tt }
+				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
 				add_to_variable = { JUNO_army_modifier_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 			}
 			ELSE_IF = {
@@ -626,7 +626,7 @@ improving_our_army_category = {
 					original_tag = ARG
 				}
 				custom_effect_tooltip = ARG_modify_argentine_army_ns_intro
-				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = artillery_attack_factor_tt }
+				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
 				add_to_variable = { JUNO_army_modifier_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 			}
 			ELSE_IF = {
@@ -647,7 +647,7 @@ improving_our_army_category = {
 			}
 			ELSE = {
 				custom_effect_tooltip = JUNO_modify_south_american_army_ns_intro
-				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = artillery_attack_factor_tt }
+				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
 				add_to_variable = { JUNO_army_modifier_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 			}
 			add_mastery_bonus = {
@@ -1481,7 +1481,7 @@ improving_our_army_category = {
 					original_tag = CHL
 				}
 				custom_effect_tooltip = CHL_modify_chilean_army_ns_intro
-				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = artillery_attack_factor_tt }
+				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
 				add_to_variable = { JUNO_army_modifier_army_artillery_defence_factor = 0.1 tooltip = army_artillery_defence_factor_tt }
 			}
 			ELSE_IF = {
@@ -1489,7 +1489,7 @@ improving_our_army_category = {
 					original_tag = BRA
 				}
 				custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = artillery_attack_factor_tt }
+				add_to_variable = { JUNO_army_modifier_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
 				add_to_variable = { JUNO_army_modifier_army_artillery_defence_factor = 0.1 tooltip = army_artillery_defence_factor_tt }
 			}
 			ELSE_IF = {

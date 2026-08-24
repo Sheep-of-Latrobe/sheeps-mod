@@ -1,0 +1,40 @@
+﻿l_english:
+
+LSM_neutrality_historical_desc: "Historical strategy for neutral countries"
+LSM_endsieg_tt: "Commit every remaining reserve to the final defence."
+GER_negotiate_peace_tooltip_tt: "Attempt to negotiate peace with the opposing alliance."
+
+germany.83.c: "We will not join, but we can embargo the Soviet Union."
+LIT_events.9.c: "Lithuania will administer Poland on our behalf."
+POL_hohenzollern_sigmaringen_long: "House of Hohenzollern-Sigmaringen"
+
+LSM_GER_SOV_102_intervene_tt: "The United States will intervene against Canada."
+LSM_GER_SOV_6_reject_tt: "Reject the proposed German-Soviet alliance."
+
+LSM_ENG_churchill.200.t: "Britain at the Crossroads"
+LSM_ENG_churchill.200.d: "With the war turning against us, the government must decide whether to continue the struggle under a new sovereign or consolidate the Empire and seek another course."
+LSM_ENG_churchill.200.a: "Elizabeth shall lead us through the storm."
+LSM_ENG_churchill.200.b: "Consolidate the Empire and seek an exit."
+LSM_ENG_churchill.201.t: "The Queen Survives an Assassination Attempt"
+LSM_ENG_churchill.201.d: "An attempt on Queen Elizabeth's life has failed. Her survival has strengthened the resolve of Britain and the Commonwealth."
+LSM_ENG_churchill.201.a: "The Crown endures."
+LSM_ENG_churchill.700.t: "Churchill's Drinking Continues"
+LSM_ENG_churchill.700.d: "The strain of war has once again driven Churchill to drink. For now, the Prime Minister remains at his post."
+LSM_ENG_churchill.700.a: "Another difficult night at Downing Street."
+
+LSM_continental_allies.1.t: "Choosing a Continental Partner"
+LSM_continental_allies.1.d: "Our strategic position demands a powerful partner beyond our shores. We must decide which great power offers the best prospect for our future."
+LSM_continental_allies.1.a: "Open negotiations with the Soviet Union."
+LSM_continental_allies.1.b: "Look toward China."
+LSM_continental_allies.1.c: "Japan is the stronger choice."
+
+LSM_new_world_diplomacy.16.t: "The Anti-Soviet Pact Is Exposed"
+LSM_new_world_diplomacy.16.d: "Soviet intelligence has uncovered our participation in the Anti-Soviet Pact. Moscow now knows the extent of our commitments against them."
+
+LSM_startup.81.t: "French AI Template Selection"
+LSM_startup.81.d: "Select the experimental force structure that the French AI will use in this campaign."
+LSM_startup.81.a: "Use the experimental medium tank formation."
+LSM_startup.81.b: "Keep the standard French setup."
+LSM_startup.82.t: "AI Strategy Test Selection"
+LSM_startup.82.d: "Select an experimental AI build for this country, or retain its standard setup."
+startup_10aa_tt: "Germany will prioritize mass infantry formations with anti-air and anti-tank support."

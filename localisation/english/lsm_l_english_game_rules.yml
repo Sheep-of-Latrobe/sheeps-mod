@@ -49,7 +49,7 @@ RULE_OPTION_ISLAMIC_AFG_AI: "Islamic Republic"
 RULE_OPTION_ISLAMIC_AFG_DESC: "Incomplete. Will act like Democratic."
 
 RULE_OPTION_ISLAMIC_PER_AI: "Islamic Revolution"
-RULE_OPTION_ISLAMIC_PER_DESCC: "Incomplete. Will be islamic but doesn't cause enough islamic revolution in middle east yet. Will add original content."
+RULE_OPTION_ISLAMIC_PER_DESC: "Incomplete. Will be Islamic but does not yet cause enough Islamic revolution in the Middle East. Original content will be added."
 
 RULE_OPTION_ISLAMIC_IRQ_AI: "Arabic Islam"
 RULE_OPTION_ISLAMIC_IRQ_DESC: "Incomplete. Will act like Fascist."

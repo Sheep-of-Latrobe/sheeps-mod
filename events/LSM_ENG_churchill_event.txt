@@ -2224,7 +2224,7 @@ country_event = {
 country_event = {
 	id = LSM_ENG_churchill.806
 	title = LSM_ENG_churchill.806.t
-	desc = LSM_ENG_churchill.806.desc
+	desc = LSM_ENG_churchill.806.d
 	picture = GFX_report_event_ast_transfer_singapore
 
 	is_triggered_only = yes
