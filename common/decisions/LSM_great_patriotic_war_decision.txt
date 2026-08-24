@@ -1999,9 +1999,6 @@ LSM_great_patriotic_war_decision = {
 			factor = 100000
 		}
 
-		modifier = {
-		}
-
 		complete_effect = {
 			custom_effect_tooltip = "state will be mobilised against the imminent invasion"
 			hidden_effect = {
@@ -2411,4 +2408,3 @@ LSM_great_patriotic_war_decision = {
 		}
 	}
 }
-	

@@ -21103,9 +21103,6 @@ last_stand_decision = {
 			factor = 100000
 		}
 
-		modifier = {
-		}
-
 		complete_effect = {
 			custom_effect_tooltip = "state will be mobilised against the imminent invasion"
 			hidden_effect = {
@@ -21911,9 +21908,6 @@ last_stand_decision = {
 			factor = 1000
 		}
 		
-		modifier = {
-		}
-
 		complete_effect = {
 			custom_effect_tooltip = "Endsieg! Los! Los! Los!"
 			hidden_effect = {
