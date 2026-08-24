@@ -499,7 +499,7 @@ ideas = {
 				war_support_weekly = -0.05
 				stability_weekly = -0.05
 				surrender_limit = -0.25
-				custom_modifier_tooltip = surrender_limit_tt
+				custom_modifier_tooltip = LSM_surrender_limit_tt
 			}
 		}
 		HOL_relocated_resource_to_technology = {
