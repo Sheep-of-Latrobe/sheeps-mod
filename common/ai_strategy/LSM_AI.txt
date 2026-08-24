@@ -2232,7 +2232,7 @@ SOV_min_factory_production1 = {
 
 	ai_strategy = {
 		type = equipment_variant_production_factor
-		id = support_equipment_1
+		id = support_equipment
 		value = 30
 	}
 

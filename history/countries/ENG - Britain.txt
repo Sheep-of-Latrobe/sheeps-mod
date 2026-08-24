@@ -103,8 +103,6 @@ if = {
 	give_guarantee = IRQ
 }
 
-load_oob = "ENG_Motorized"
-
 IRQ = {
 	give_military_access = ENG
 	IF = {
@@ -142,6 +140,8 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+
+load_oob = "ENG_Motorized"
 
 set_grand_doctrine = grand_battleplan
 set_grand_doctrine = new_fleet_in_being
