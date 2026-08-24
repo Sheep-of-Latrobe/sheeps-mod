@@ -1082,7 +1082,7 @@ country_event = {
 	id = czech.37
 	title = czech.37.t
 	desc = czech.37.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_germany_politician_handshake
 	
 	is_triggered_only = yes
 	
@@ -1168,7 +1168,7 @@ country_event = {
 	id = czech.38
 	title = czech.38.t
 	desc = czech.38.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_germany_politician_handshake
 	
 	is_triggered_only = yes
 	

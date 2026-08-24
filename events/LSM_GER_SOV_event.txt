@@ -291,7 +291,7 @@ country_event = {
 	id = LSM_GER_SOV.99
 	title = LSM_GER_SOV.99.t
 	desc = LSM_GER_SOV.99.d
-	picture = report_event_hungarian_soldiers
+	picture = GFX_report_event_hungarian_soldiers
 
 	is_triggered_only = yes
 
@@ -465,7 +465,7 @@ country_event = {
 	id = LSM_GER_SOV.1
 	title = LSM_GER_SOV.1.t
 	desc = LSM_GER_SOV.1.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_germany_politician_handshake
 
 	is_triggered_only = yes
 

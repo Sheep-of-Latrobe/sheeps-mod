@@ -1428,7 +1428,7 @@ country_event = {
 	id = LSM_new_world_diplomacy.16
 	title = LSM_new_world_diplomacy.16.t
 	desc = LSM_new_world_diplomacy.16.d
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_germany_politician_handshake
 
 	hidden = yes
 
@@ -1534,7 +1534,7 @@ country_event = {
 		}
 
 	}
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_germany_politician_handshake
 	
 	is_triggered_only = yes
 
@@ -2588,7 +2588,7 @@ country_event = {
 	title = LSM_new_world_diplomacy.41.t
 	desc = LSM_new_world_diplomacy.41.d
 
-	picture = GFX_report_event_hitler_handshake
+	picture = GFX_report_event_germany_politician_handshake
 	
 	is_triggered_only = yes
 
