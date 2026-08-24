@@ -98,10 +98,6 @@ improving_our_army_category = {
 
 		icon = GFX_decision_generic_tank
 
-		ai_will_do = {
-			base = 80
-		}
- 
 		allowed = {  
 			OR = {
 				original_tag = URG
@@ -209,10 +205,6 @@ improving_our_army_category = {
 
 		icon = GFX_decision_generic_tank
 
-		ai_will_do = {
-			base = 80
-		}
-	
 		allowed = {  
 			OR = {
 				original_tag = URG
@@ -319,10 +311,6 @@ improving_our_army_category = {
 
 		icon = GFX_decision_generic_army_support
 
-		ai_will_do = {
-			base = 60
-		}
-	
 		allowed = {  
 			OR = {
 				original_tag = URG
@@ -494,10 +482,6 @@ improving_our_army_category = {
 
 		icon = GFX_decision_generic_army_support
 
-		ai_will_do = {
-			base = 80
-		}
-	
 		allowed = {  
 			OR = {
 				original_tag = URG
@@ -674,10 +658,6 @@ improving_our_army_category = {
 
 		icon = GFX_decision_generic_army_support
 
-		ai_will_do = {
-			base = 50
-		}
-	
 		allowed = {  
 			OR = {
 				original_tag = URG
@@ -850,10 +830,6 @@ improving_our_army_category = {
 
 		icon = GFX_decision_generic_army_support
 
-		ai_will_do = {
-			base = 60
-		}
-	
 		allowed = {  
 			OR = {
 				original_tag = URG
@@ -1024,10 +1000,6 @@ improving_our_army_category = {
 
 		icon = GFX_decision_generic_army_support
 
-		ai_will_do = {
-			base = 60
-		}
-	
 		allowed = {  
 			OR = {
 				original_tag = URG
@@ -1197,10 +1169,6 @@ improving_our_army_category = {
 
 		icon = GFX_decision_generic_army_support
 
-		ai_will_do = {
-			base = 70
-		}
-	
 		allowed = {  
 			OR = {
 				original_tag = URG
@@ -1372,10 +1340,6 @@ improving_our_army_category = {
 
 		icon = GFX_decision_generic_army_support
 
-		ai_will_do = {
-			base = 50
-		}
-	
 		allowed = {  
 			OR = {
 				original_tag = URG

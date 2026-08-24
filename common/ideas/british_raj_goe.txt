@@ -1765,6 +1765,7 @@ ideas = {
 			}
 			on_add = {
 				add_doctrine_cost_reduction = {
+					name = idea_RAJ_bose_hiding_ussr
 					cost_reduction = 0.4
 					uses = 1
 					category = cat_mass_assault
@@ -2181,6 +2182,7 @@ ideas = {
 
 			on_add = {
 				add_doctrine_cost_reduction = {
+					name = idea_RAJ_bose_hiding_ger
 					cost_reduction = 0.4
 					uses = 1
 					category = cat_mobile_warfare
@@ -2227,6 +2229,7 @@ ideas = {
 				
 			on_add = {
 				add_doctrine_cost_reduction = {
+					name = idea_RAJ_bose_submarine
 					cost_reduction = 0.1
 					uses = 1
 					category = ss_tech
@@ -2272,15 +2275,12 @@ ideas = {
 			}
 			on_add = {
 				add_doctrine_cost_reduction = {
+					name = idea_RAJ_bose_jap
 					cost_reduction = 0.4
 					uses = 1
 					category = cat_grand_battle_plan
 				}
 				
-			}
-
-			cancel = {
-				has_completed_focus = RAJ_give_me_blood_and_i_will_grant_you_freedom
 			}
 
 			removal_cost = -1

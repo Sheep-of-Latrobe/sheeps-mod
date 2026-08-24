@@ -195,8 +195,6 @@ characters={
 					has_country_flag = vichy_france
 				}
 			}
-			#TODO: I have no idea why they have costs twice and with different decimal counts
-			cost = 50.000
 			traits = {
 				army_chief_offensive_2
 			}
@@ -245,8 +243,6 @@ characters={
 					has_country_flag = vichy_france
 				}
 			}
-			#TODO: I have no idea why they have costs twice and with different decimal counts
-			cost = 50.000
 			traits = {
 				army_chief_defensive_2
 			}
