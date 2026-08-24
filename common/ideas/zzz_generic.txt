@@ -513,7 +513,7 @@ ideas = {
 					}
 					GER = {
 						dismantle_faction = yes
-						create_faction = "Axis"
+						create_faction = Axis
 						if = {
 							limit = { has_completed_focus = GER_alliance_with_the_ussr }
 							uncomplete_national_focus = { focus = GER_alliance_with_the_ussr }
@@ -521,7 +521,7 @@ ideas = {
 					}
 					SOV = {
 						dismantle_faction = yes
-						create_faction = "Comintern"
+						create_faction = Comintern
 					}
 				}
 			}
