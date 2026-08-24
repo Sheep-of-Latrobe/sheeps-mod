@@ -1,7 +1,7 @@
 ###DEBUG STUFF
 
 debug_decisions = {
-	DEBUG_Manu = {
+	DEBUG_FIN_Manu = {
 		priority = 999
 		allowed = {
 			tag = FIN

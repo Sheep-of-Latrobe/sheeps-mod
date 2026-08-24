@@ -1869,15 +1869,6 @@ GER_messerschmitt_organization = {
 			NOR_AAT = yes 
 		}
 	}
-	
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = GER } }
-			FROM = {
-				is_ai = no
-			}
-		}
-	}
 
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
@@ -2051,16 +2042,6 @@ GER_junkers_organization = {
 			}
 		}
 	}
-	
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = GER } }
-			FROM = {
-				is_ai = no
-			}
-		}
-	}
-
 	
 	visible = {
 		IF = {

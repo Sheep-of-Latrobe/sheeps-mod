@@ -95,13 +95,8 @@ SOV_morozov_design_bureau_organization = {
 		}
 	}
 	
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = SOV } }
-			FROM = {
-				is_ai = no
-			}
-		}
+	ai_will_do = {
+		factor = 0
 	}
 
 	available = {

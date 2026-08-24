@@ -140,11 +140,8 @@ FRA_hotchkiss_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = FRA } }
-			FROM = { is_ai = no }
-		}
+	ai_will_do = {
+		factor = 0
 	}
 	add_trait = {
 		token = FRA_mio_trait_l_35

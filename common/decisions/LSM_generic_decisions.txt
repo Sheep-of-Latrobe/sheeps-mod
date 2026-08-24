@@ -6604,11 +6604,19 @@ last_stand_decision = {
 							division_template = "Kanto Shidan" 
 						}
 					}
+					set_division_template_lock = {
+						division_template = "Rikusentai"
+						is_locked = yes
+					}
 					add_units_to_division_template = {
 						template_name = "Rikusentai" 
 						support = {
 							artillery = 0 
 						}
+					}
+					set_division_template_lock = {
+						division_template = "Rikusentai"
+						is_locked = no
 					}
 					every_country_division = {
 						limit = { 
@@ -17817,16 +17825,12 @@ last_stand_decision = {
 					NOT = { has_tech = infantry_weapons1 }
 					NOT = { has_country_flag = gun1_licensed }
 				}
-				ROOT = {
-					create_production_license = {
-						target = PREV
-						equipment = {
-							type = infantry_equipment_1
-						}
-						cost_factor = 0
-					}
-					add_cic = 100
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 2500
+					producer = ROOT
 				}
+				ROOT = { add_cic = 100 }
 				set_country_flag = gun1_licensed
 			}
 		}

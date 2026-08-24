@@ -264,13 +264,8 @@ ENG_harland_wolff_organization = {
 		relative_position_id = generic_mio_trait_transom_stern
 	}
 
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ENG } }
-			hidden_trigger = {
-				FROM = { is_ai = no }
-			}	
-		}
+	ai_will_do = {
+		factor = 0
 	}
 
 	add_trait = {
@@ -322,11 +317,8 @@ ENG_cammell_laird_organization = {
 		}
 	}
 
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ENG } }
-			FROM = { is_ai = no }
-		}
+	ai_will_do = {
+		factor = 0
 	}
 
 	available = {
@@ -407,13 +399,8 @@ ENG_yarrow_shipbuilders_organization = {
 		}
 	}
 
-	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ENG } }
-			hidden_trigger = {
-				FROM = { is_ai = no }
-			}	
-		}
+	ai_will_do = {
+		factor = 0
 	}
 
 	available = {
