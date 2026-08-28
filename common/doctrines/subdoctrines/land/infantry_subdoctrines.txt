@@ -162,8 +162,11 @@ large_unit_tactics = {
         modifier = {
             factor = 0
             OR = {
-	        original_tag = GER
-		is_cavalry_nation = yes
+                AND = {
+	                original_tag = GER
+	                space_marine_tb = no
+	            }
+		    is_cavalry_nation = yes
             }
         }
 	modifier = {

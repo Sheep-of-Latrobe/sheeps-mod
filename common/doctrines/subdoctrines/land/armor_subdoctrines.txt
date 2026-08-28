@@ -253,8 +253,9 @@ streamlined_deployment = {
 
         base = 1
         modifier = {
-            	factor = 500
-		is_spg_country = yes
+            factor = 500
+		    is_spg_country = yes
+		    space_marine_tb = no
         }
 
     }
@@ -337,6 +338,10 @@ mobile_defense = {
         ai_will_do = {
 
         base = 0
+            modifier = {
+                add = 100
+                space_marine_tb
+            }
 
     }
 

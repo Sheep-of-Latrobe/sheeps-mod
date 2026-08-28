@@ -139,6 +139,7 @@ startup_10c_tt: "§R---Filled with Blursed Germany build that might kill players
 startup_10d_tt: "§R---Light tanks Germany. If you are unworthy, you shall die very quickly---§!"
 startup_10e_tt: "§R---Spacemarine Germany. Very hard to tell whether it works---§!"
 startup_10g_tt: "§R---Vrroooomm Vrroooommmm VRRROOOOMMMMMMMM---§!"
+startup_10z_tt: "$R This is a space marine test build for 1.19.2!"
 startup_1a_tt: "§CRecommend option:§!\n§G+Balanced and better overall performance for Soviet AI.§!"
 startup_1b_tt: "§GWeaker overall Soviet AI, might be good for newcomers.§!"
 startup_1c_tt: "§C---Either you kill them quick or you might actually die later.---§!"

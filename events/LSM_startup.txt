@@ -1108,7 +1108,7 @@ country_event = {
 		name = LSM_startup.10.b
 		custom_effect_tooltip = startup_10b_tt
 		ai_chance = {
-			factor = 35
+			factor = 0
 		}
 		hidden_effect = {
 			GER = { 
@@ -1121,7 +1121,7 @@ country_event = {
 		name = LSM_startup.10.c 
 		custom_effect_tooltip = startup_10b_tt
 		ai_chance = {
-			factor = 30
+			factor = 0
 		}
 		hidden_effect = {
 			country_event = { id = LSM_startup.117 }
@@ -1130,12 +1130,26 @@ country_event = {
 			}
 		}
 	}
+
+	option = {
+    	name = LSM_startup.10.z
+    	custom_effect_tooltip = startup_10z_tt
+    	ai_chance = {
+    		factor = 100
+    	}
+    	hidden_effect = {
+    		GER = {
+    		    set_country_flag = space_marine_tb
+    			set_grand_doctrine = superior_firepower
+    		}
+    	}
+    }
 	
 	option = {
 		name = LSM_startup.10.e
 		custom_effect_tooltip = startup_10c_tt
 		ai_chance = {
-			factor = 35
+			factor = 0
 		}
 		hidden_effect = {
 			country_event = { id = LSM_startup.11 }
@@ -1968,215 +1982,5 @@ country_event = {
 		hidden_effect = {
 			SOV = { set_country_flag = mech_brick }
 		}
-	}
-}
-
-country_event = {
-	id = LSM_startup.2
-	title = LSM_startup.2.t
-	desc = LSM_startup.2.d
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = LSM_startup.2.a
-		hidden_effect = {
-			CAN = { annex_country = { target = FIN transfer_troops = yes } }
-			CAN = { annex_country = { target = SWE transfer_troops = yes } }
-			CAN = { annex_country = { target = NOR transfer_troops = yes } }
-			USA = { annex_country = { target = TAN transfer_troops = yes } }
-			USA = { annex_country = { target = MON transfer_troops = yes } }
-			USA = { annex_country = { target = LIT transfer_troops = yes } }
-			USA = { annex_country = { target = LAT transfer_troops = yes } }
-			USA = { annex_country = { target = EST transfer_troops = yes } }
-			FIN = { 
-				transfer_state = 465
-				transfer_state = 464
-				transfer_state = 468
-				transfer_state = 862
-				transfer_state = 276
-				transfer_state = 466
-				transfer_state = 860
-				transfer_state = 332
-				transfer_state = 331
-				transfer_state = 861
-				transfer_state = 863
-				load_oob = "CAN_1936_nsb"
-			}
-			SWE = { 
-				transfer_state = 682
-				transfer_state = 866
-				transfer_state = 867
-				transfer_state = 467
-				transfer_state = 683
-				transfer_state = 472
-				transfer_state = 865
-				transfer_state = 469
-				transfer_state = 470
-				load_oob = "CAN_1936_nsb"
-			}
-			NOR = { 
-				transfer_state = 473
-				transfer_state = 471
-				transfer_state = 864
-				transfer_state = 463
-				transfer_state = 740
-				transfer_state = 739
-				load_oob = "CAN_1936_nsb"
-			}
-			every_state = { 
-				limit = {
-					is_core_of = UKR
-				}
-				MEX = { transfer_state = PREV }
-			}
-			MEX = { transfer_state = 80 }
-			MEX = { transfer_state = 78 }
-			MEX = { transfer_state = 766 }
-			MEX = { transfer_state = 137 }
-			every_state = { 
-				limit = {
-					is_core_of = MEX
-				}
-				SOV = { transfer_state = PREV }
-			}
-			every_state = { 
-				limit = {
-					is_core_of = SOV
-					is_owned_by = SOV
-				}
-				USA = { transfer_state = PREV }
-			}
-			every_state = { 
-				limit = {
-					is_core_of = BLR
-				}
-				USA = { transfer_state = PREV }
-			}
-			USA = { transfer_state = 784 }
-			every_state = { 
-				limit = {
-					is_owned_by = USA
-					NOT = { is_core_of = SOV }
-					NOT = { is_core_of = LIT }
-					NOT = { is_core_of = LAT }
-					NOT = { is_core_of = EST }
-					NOT = { is_core_of = POL }
-					NOT = { is_core_of = BLR }
-					NOT = { is_core_of = MON }
-				}
-				SOV = { transfer_state = PREV }
-			}
-			every_state = { 
-				limit = {
-					is_core_of = CAN
-				}
-				remove_core_of = CAN
-			}
-			every_state = { 
-				limit = {
-					is_core_of = FIN
-				}
-				remove_core_of = FIN
-			}
-			every_state = { 
-				limit = {
-					is_core_of = SOV
-				}
-				remove_core_of = SOV
-			}
-			every_state = { 
-				limit = {
-					is_core_of = SWE
-				}
-				remove_core_of = SWE
-			}
-			every_state = { 
-				limit = {
-					is_core_of = NOR
-				}
-				remove_core_of = NOR
-			}
-			every_state = { 
-				limit = {
-					is_core_of = USA
-				}
-				remove_core_of = USA
-			}
-			every_state = { 
-				limit = {
-					is_core_of = MEX
-				}
-				remove_core_of = MEX
-			}
-			every_country = {
-				limit = {
-					OR = { 
-						tag = CAN 
-						tag = MEX 
-						tag = USA 
-						tag = FIN 
-						tag = SWE 
-						tag = NOR 
-						tag = SOV
-					}
-				}
-				every_owned_state = { 
-					add_core_of = PREV
-				}
-			}
-			USA = {
-				give_military_access = MEX
-				give_military_access = CAN
-				give_military_access = SOV
-			}
-			SOV = {
-				give_military_access = MEX
-				give_military_access = CAN
-				give_military_access = USA
-			}
-			CAN = {
-				give_military_access = MEX
-				give_military_access = SOV
-				give_military_access = USA
-			}
-			USA = { give_guarantee = DEN }
-			SOV = { give_guarantee = PHI }
-			SOV = { give_guarantee = INS }
-			SOV = { give_guarantee = MAL }
-			SOV = { 
-				complete_national_focus = SOV_eastern_development 
-				complete_national_focus = SOV_develop_the_urals 
-				complete_national_focus = SOV_pc_of_mechanical_engineering 
-				complete_national_focus = SOV_pc_of_mechanical_engineering 
-				complete_national_focus = SOV_pc_of_mortar_armament
-				add_research_slot = 1
-			}
-			FIN = { 
-				add_research_slot = 1
-				ETH_upgrade_state_category = yes
-				ETH_upgrade_state_category = yes
-				ETH_upgrade_state_category = yes
-			}
-			SWE = { 
-				add_research_slot = 1
-				ETH_upgrade_state_category = yes
-				ETH_upgrade_state_category = yes
-				ETH_upgrade_state_category = yes
-				ETH_upgrade_state_category = yes
-				ETH_upgrade_state_category = yes
-				ETH_upgrade_state_category = yes
-			}
-			NOR = { 
-				add_research_slot = 1
-				ETH_upgrade_state_category = yes
-				ETH_upgrade_state_category = yes
-				ETH_upgrade_state_category = yes
-			}
-		}
-	}
-	
-	option = {
-		name = LSM_startup.2.b #nothing happens
 	}
 }

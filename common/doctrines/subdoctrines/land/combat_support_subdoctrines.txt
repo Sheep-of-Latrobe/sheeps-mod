@@ -375,8 +375,11 @@ mobile_recon_and_assault = {
     }
     
     ai_will_do = {
-
         base = 0
+        modifier = {
+            add = 100
+            space_marine_tb
+        }
     }
     
 
@@ -471,8 +474,11 @@ mobile_recon_and_assault_no_lar = {
 
     
     ai_will_do = {
-
         base = 0
+        modifier = {
+            add = 100
+            space_marine_tb
+        }
     }
     
 
