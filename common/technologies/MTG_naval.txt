@@ -35,6 +35,10 @@ technologies = {
 			leads_to_tech = sonar
 			research_cost_coeff = 1
 		}
+		#path = {
+		#	leads_to_tech = improved_seaplane_tender
+		#	research_cost_coeff = 1
+		#}
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -936,10 +940,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = improved_airplane_launcher
-			research_cost_coeff = 1
-		}
+		#path = {
+		#	leads_to_tech = improved_airplane_launcher
+		#	research_cost_coeff = 1
+		#}
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -2527,7 +2531,7 @@ early_ship_hull_carrier = {
 
 	sp_naval_proximity_fuze_tech = {
 		#HIDDEN EFFECT FOR THE PROXIMITY FUZE 
-		navy_anti_air_attack_factor = 0.25
+		navy_anti_air_attack_factor = 0.15
 		research_cost = 1
 		start_year = 1940
 		
