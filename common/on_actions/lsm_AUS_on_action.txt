@@ -1,0 +1,13 @@
+on_actions = {
+    on_startup = {
+        effect = {
+    	AUS = {
+    		add_ai_strategy = {
+    			type = alliance
+    			id = GER
+    			value = -2000
+    		    }
+    		}
+    	}
+    }
+}

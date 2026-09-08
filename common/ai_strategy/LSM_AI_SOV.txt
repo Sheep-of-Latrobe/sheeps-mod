@@ -23,7 +23,7 @@ endsieg_combat_appropriation = {
 					any_neighbor_state = { controller = { has_war_with = GER } }
 				}
 			}
-			GER = { has_country_flag = LSM_eligbility_nation }
+			GER = { has_country_flag = LSM_eligibility_nation }
 		}
 	}
 	ai_strategy = {

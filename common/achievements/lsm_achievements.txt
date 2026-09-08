@@ -161,6 +161,8 @@ sheep_quantity_is_quality = {
 		}
 	}
 }
+
+# TODO: Broken and needs a new
 sheep_ultimate_victory = {
 	possible = {
         	difficulty > 0

@@ -2234,23 +2234,9 @@ ideas = {
 			}
 		
 			on_remove = {
-				if = { 
+				if = {
 					limit = { 
 						NOT = { has_country_flag = LSM_eligibility_nation }
-						has_global_flag = enclave_enabled
-					}
-					every_state = {
-						limit = { 
-							is_core_of = CHI
-							is_claimed_by = JAP
-						}
-						add_core_of = JAP
-					}
-				}
-				if = { 
-					limit = { 
-						NOT = { has_country_flag = LSM_eligibility_nation }
-						NOT = { has_global_flag = enclave_enabled }
 					}
 					every_state = {
 						limit = { 
@@ -3841,7 +3827,7 @@ ideas = {
 
 		}
 		
-		LSM_the_final_push_success = { 
+		LSM_the_final_push_success = {
 			allowed = {
 				always = yes
 			}
@@ -4143,7 +4129,7 @@ ideas = {
 						limit = {
 							is_in_faction_with = GER
 							is_ai = yes
-							NOT = { has_country_flag = LSM_elibiligity_nation }
+							NOT = { has_country_flag = LSM_eligibility_nation }
 							has_capitulated = no
 						}
 						add_timed_idea = { idea = LSM_surrender_limit days = 30 }
@@ -4174,7 +4160,7 @@ ideas = {
 			}
 
 			available = {
-				NOT = { has_country_flag = LSM_eligbility_nation }
+				NOT = { has_country_flag = LSM_eligibility_nation }
 				GER = { has_idea = endsieg_idea }
 			}
 	

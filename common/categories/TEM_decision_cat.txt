@@ -1,8 +1,0 @@
-
-economic_mobilisation_cat = {
-	icon = generic_propaganda
-
-	visible = {
-		has_war = yes
-	}
-}
