@@ -10241,7 +10241,7 @@ allies_mainland_withdrawal_frontline = {
 		NOT = { tag = POL }
 		OR = {
 			NOT = {
-				FRA = { has_country_flag = LSM_eligbility_nation }
+				FRA = { has_country_flag = LSM_eligibility_nation }
 			}
 			FRA = {
 				has_country_flag = {
@@ -10284,7 +10284,7 @@ allies_mainland_withdrawal_frontline_mainland_europe_evacuate_asap = {
 		}
 		OR = {
 			NOT = {
-				FRA = { has_country_flag = LSM_eligbility_nation }
+				FRA = { has_country_flag = LSM_eligibility_nation }
 			}
 			FRA = {
 				has_country_flag = {

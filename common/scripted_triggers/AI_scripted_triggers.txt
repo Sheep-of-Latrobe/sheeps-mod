@@ -1787,8 +1787,7 @@ intel_vs_allies_tier5 = {
 	}
 }
 GER_is_human_yes_air = { #we ditch air completely if GER has 2/4 tech cuz only humans will do that
-	GER = { 
-		NOT = { has_country_flag = LSM_endsieg_has_begun }
+	GER = {
 		is_ai = no 
 		date > 1938.1.1 
 		OR = {
@@ -1829,8 +1828,7 @@ GER_is_human_yes_air = { #we ditch air completely if GER has 2/4 tech cuz only h
 }
  
 GER_is_super_ai_yes_air = {
-	GER = { 
-		NOT = { has_country_flag = LSM_endsieg_has_begun }
+	GER = {
 		is_ai = yes  
 		date > 1938.1.1
 		num_of_military_factories > 200
@@ -2075,7 +2073,6 @@ GER_is_not_relevant_to_allies = {
 		GER = { is_in_faction_with = ENG }
 		NOT = { country_exists = GER }
 		GER = { has_country_flag = lsm_eligibility_nation }
-		GER = { has_country_flag = LSM_endsieg_has_begun } 
 		AND = {
 			OR = {
 				AND = {
@@ -2114,7 +2111,6 @@ GER_is_not_relevant = {
 		GER = { is_in_faction_with = SOV }
 		NOT = { country_exists = GER }
 		GER = { has_country_flag = lsm_eligibility_nation }
-		GER = { has_country_flag = LSM_endsieg_has_begun } #you are dying anyway
 		AND = {
 			OR = {
 				AND = {

@@ -245,20 +245,8 @@ on_actions = {
 			}
 		}
 		effect = {
-			#GXC = {
-			#	trigger_army_check_WRL = yes
-			#}
 			CHI = {
-				#if = {
-				#	limit = { 
-				#		is_ai = yes 
-				#		is_historical_focus_on = yes
-				#	}
-				#	add_ideas = counter_german_advisors
-				#}
-				#trigger_army_check_CHI = yes
-				#trigger_army_check_CHI = yes
-				add_equipment_to_stockpile = { 
+				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
 					amount = 2700
 					producer = CHI

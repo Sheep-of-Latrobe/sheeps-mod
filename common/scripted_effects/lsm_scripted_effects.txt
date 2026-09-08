@@ -876,12 +876,12 @@ release_this_country_as_puppet = {
 				limit = {
 					is_core_of = PREV
 				}
-                   		create_unit = {
-                       			division = "name = \"Emergency Militia\" division_template = \"Emergency Militia\" start_experience_factor = 0.02"
-                       			owner = PREV
-                       			count = 2
-               			}
-               		}
+                create_unit = {
+                	division = "name = \"Emergency Militia\" division_template = \"Emergency Militia\" start_experience_factor = 0.02"
+                	owner = PREV
+                	count = 2
+               	}
+            }
 		}
 	}
 }
@@ -926,94 +926,6 @@ add_state_core_on_this_state = {
 	}
 }
 
-trigger_army_check_CHI = {
-	random_owned_controlled_state = {
-		limit = {
-			NOT = { has_state_flag = army_check_added }
-		}
-		set_state_flag = army_check_added
-		create_unit = {
-			division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0 start_equipment_factor = 0.3"  
-			owner = CHI
-			allow_spawning_on_enemy_provs = yes  
-			count = 3
-		}
-	}
-	random_owned_controlled_state = {
-		limit = {
-			NOT = { has_state_flag = army_check_added }
-		}
-		set_state_flag = army_check_added
-		create_unit = {
-			division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0 start_equipment_factor = 0.3"  
-			owner = CHI
-			allow_spawning_on_enemy_provs = yes  
-			count = 3
-		}
-	}
-	random_owned_controlled_state = {
-		limit = {
-			NOT = { has_state_flag = army_check_added }
-		}
-		set_state_flag = army_check_added
-		create_unit = {
-			division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0 start_equipment_factor = 0.3"  
-			owner = CHI
-			allow_spawning_on_enemy_provs = yes  
-			count = 3
-		}
-	}
-	random_owned_controlled_state = {
-		limit = {
-			NOT = { has_state_flag = army_check_added }
-		}
-		set_state_flag = army_check_added
-		create_unit = {
-			division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0 start_equipment_factor = 0.3"  
-			owner = CHI
-			allow_spawning_on_enemy_provs = yes  
-			count = 3
-		}
-	}
-	random_owned_controlled_state = {
-		limit = {
-			NOT = { has_state_flag = army_check_added }
-		}
-		set_state_flag = army_check_added
-		create_unit = {
-			division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0 start_equipment_factor = 0.3"  
-			owner = CHI
-			allow_spawning_on_enemy_provs = yes  
-			count = 3
-		}
-	}
-}
-trigger_army_check_WRL = {
-	random_owned_controlled_state = {
-		limit = {
-			NOT = { has_state_flag = army_check_added }
-		}
-		set_state_flag = army_check_added
-		create_unit = {
-			division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0 start_equipment_factor = 0.3"  
-			owner = GXC
-			allow_spawning_on_enemy_provs = yes  
-			count = 3
-		}
-	}
-	random_owned_controlled_state = {
-		limit = {
-			NOT = { has_state_flag = army_check_added }
-		}
-		set_state_flag = army_check_added
-		create_unit = {
-			division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0 start_equipment_factor = 0.3"  
-			owner = GXC
-			allow_spawning_on_enemy_provs = yes  
-			count = 3
-		}
-	}
-}
 give_the_proper_spg_tech = {
 	if = {
 		limit = { has_global_flag = is_active }

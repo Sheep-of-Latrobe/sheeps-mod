@@ -1,0 +1,17 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			RAJ = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+						NOT = { has_dlc = "Graveyard of Empires" }
+					}
+					set_variable = { RAJ_agrarian_society_value = -0.70 }
+					add_dynamic_modifier = { modifier = RAJ_agrarian_society_dynamic }
+					remove_ideas = RAJ_agrarian_society #For startup screen
+				}
+			}
+		}
+    }
+}

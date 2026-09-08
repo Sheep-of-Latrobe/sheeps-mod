@@ -1,0 +1,52 @@
+on_actions {
+    on_startup = {
+		effect = {
+			GER = {
+				add_ai_strategy = {
+					type = alliance
+					id = AUS
+					value = -2000
+				}
+			}
+		}
+		effect = {
+			if = {
+        		limit = {
+        			tag = GER
+        			is_ai = no
+        			difficulty < 3
+        		}
+        		country_event = { id = LSM_startup.77 }
+        	}
+		}
+		effect = {
+        	GER = {
+        		if = {
+        			limit = {
+        				is_ai = yes
+        				date < 1937.1.1
+        				has_global_flag = AI_is_balanced
+        			}
+        			add_ideas = GER_high_command
+        		}
+        		add_ideas = temporary_debug_idea_navy
+        	}
+        }
+        effect = {
+        	every_country = {
+        		limit = {
+        			tag = GER
+        		}
+        		every_other_country = {
+        			limit = {
+        				is_axis_ai = yes
+        			}
+        			add_opinion_modifier = {
+        	   			target = PREV
+        	   			modifier = trade_relation_bonus_high_1
+        			}
+        		}
+        	}
+        }
+    }
+}

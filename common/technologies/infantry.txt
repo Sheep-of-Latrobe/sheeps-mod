@@ -232,14 +232,6 @@ technologies = {
 					}
 				}
 			}
-
-			modifier = {
-				factor = 0
-				tag = SOV
-				NOT = { has_completed_focus = SOV_pc_of_mechanical_engineering }
-				is_historical_focus_on = yes
-				has_global_flag = is_done
-			}
 		}
 	}
 
@@ -337,25 +329,6 @@ technologies = {
 				factor = 50
 				has_focus_tree = equipment_effort_3
 			}
-			
-			modifier = {
-				factor = 0
-				tag = SOV
-				NOT = { has_completed_focus = SOV_pc_of_mechanical_engineering }
-				is_historical_focus_on = yes
-				has_global_flag = is_done
-			}
-			#modifier = {
-			#	factor = 0
-			#	tag = SOV
-			#	OR = {
-			#		date < "1944.1.1" # stock up on lots of rifles, we got the manpower
-			#		AND = {
-			#			date > "1943.1.1"
-			#			surrender_progress < 0.1 # if we arent losing badly its ok
-			#		}
-			#	}
-			#}
 		}
 	}
 	improved_infantry_weapons_2 = {
