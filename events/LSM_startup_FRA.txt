@@ -1,0 +1,79 @@
+add_namespace = LSM_startup_FRA
+
+country_event = {
+	id = LSM_startup.81
+	title = LSM_startup.81.t
+	desc = LSM_startup.81.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = LSM_startup.81.a
+		set_country_flag = fastgaming
+		ai_chance = {
+			factor = 20
+		}
+		create_equipment_variant = {
+			name = "Medium Tank I"
+			type = medium_tank_chassis_0
+			parent_version = 0
+			allow_without_tech = yes # Tooltip purposes, tech is required anyways
+			modules = {
+				main_armament_slot = tank_medium_howitzer
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = secondary_turret_hmg
+				special_type_slot_3 = secondary_turret_hmg
+				special_type_slot_4 = extra_ammo_storage
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 0
+				tank_nsb_armor_upgrade = 4
+			}
+			icon = "GFX_SOV_advanced_heavy_tank_medium"
+			design_team = mio:FRA_renault_organization
+		}
+		division_template = {
+			name = "Medium Tank 1936 E"			# Rifle Division
+			division_names_group = FRA_ARM_01
+			is_locked = no
+			priority = 1
+			regiments = {
+				camelry = { x = 0 y = 0 }
+				camelry = { x = 0 y = 1 }
+				camelry = { x = 0 y = 2 }
+				camelry = { x = 0 y = 3 }
+				camelry = { x = 0 y = 4 }
+
+				camelry = { x = 1 y = 0 }
+				camelry = { x = 1 y = 1 }
+				camelry = { x = 1 y = 2 }
+
+				medium_armor = { x = 2 y = 0 }
+				medium_armor = { x = 2 y = 1 }
+				medium_armor = { x = 2 y = 2 }
+				medium_armor = { x = 2 y = 3 }
+				medium_armor = { x = 2 y = 4 }
+
+				medium_armor = { x = 3 y = 0 }
+				medium_armor = { x = 3 y = 1 }
+				medium_armor = { x = 4 y = 0 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = { x = 0 y = 1 }
+				anti_air = { x = 0 y = 2 }
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.81.b
+		ai_chance = {
+			factor = 80
+		}
+	}
+}

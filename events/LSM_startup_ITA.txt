@@ -1,0 +1,33 @@
+add_namespace = LSM_startup_ITA
+
+# Random difficulty setup for ITA
+country_event = {
+	id = LSM_startup.85
+	title = LSM_startup.82.t
+	desc = LSM_startup.82.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = LSM_startup.82.a
+		set_country_flag = italo_balbo_for_italy
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = LSM_startup.82.a
+		set_country_flag = dino_grandi_for_italy
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = LSM_startup.82.a
+		ai_chance = {
+			factor = 33
+		}
+	}
+}

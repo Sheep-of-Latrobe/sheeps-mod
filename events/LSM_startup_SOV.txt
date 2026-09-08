@@ -1,0 +1,764 @@
+add_namespace = LSM_startup_SOV
+
+country_event = {
+	id = LSM_startup.1
+	title = LSM_startup.1.t
+	desc = LSM_startup.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = LSM_startup.1.c
+		custom_effect_tooltip = startup_1a_tt
+		hidden_effect = {
+			country_event = { id = LSM_startup.3 }
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = LSM_startup.1.a
+		custom_effect_tooltip = startup_1b_tt
+		trigger = {
+			NOT = { has_global_flag = mp_difficulty }
+		}
+		hidden_effect = {
+			country_event = { id = LSM_startup.4 }
+			SOV = { set_grand_doctrine = superior_firepower }
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = LSM_startup.1.b
+		custom_effect_tooltip = startup_1c_tt
+		trigger = {
+			NOT = { has_global_flag = mp_difficulty }
+		}
+		hidden_effect = {
+			country_event = { id = LSM_startup.5 }
+			SOV = { set_grand_doctrine = grand_battleplan }
+		}
+		ai_chance = {
+			factor = 33
+		}
+	}
+
+	option = {
+		name = LSM_startup.1.f
+		custom_effect_tooltip = startup_1d_tt
+		hidden_effect = {
+			country_event = { id = LSM_startup.34 }
+			SOV = {
+				set_grand_doctrine = new_mobile_warfare
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = LSM_startup.34
+	title = LSM_startup.3.t
+	desc = LSM_startup.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = LSM_startup.34.a
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = {
+				set_grand_doctrine = new_mobile_warfare
+			}
+			SOV = {
+				set_country_flag = mobile_warfare_roach_1
+				division_template = {
+					name = "Infantry template 7"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						anti_air_brigade = { x = 2 y = 0 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.34.b
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = {
+				set_grand_doctrine = mass_assault
+			}
+			SOV = {
+				set_country_flag = mobile_warfare_roach_2
+				division_template = {
+					name = "Infantry template 7"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.82.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 200
+				GER = { is_ai = no }
+			}
+		}
+				custom_effect_tooltip = LSM_startup_82_a_tt
+		hidden_effect = {
+			SOV = {
+				set_country_flag = pure_infantry
+				division_template = {
+					name = "Infantry 1936 A"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+
+						infantry = { x = 4 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						anti_air = { x = 0 y = 2 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.82.aa
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 200
+				GER = { is_ai = no }
+			}
+		}
+				custom_effect_tooltip = LSM_startup_82_aa_tt
+		hidden_effect = {
+			SOV = {
+				set_country_flag = pure_infantry
+				set_country_flag = pure_infantry_no_air
+				division_template = {
+					name = "Infantry 1936 A"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+
+						heavy_tank_destroyer_brigade = { x = 4 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						anti_air = { x = 0 y = 2 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.82.b
+		trigger = {
+			always = no #disabled
+		}
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = {
+				set_country_flag = tank_is_good
+				set_country_flag = spacemarine
+				set_grand_doctrine = superior_firepower
+				add_tech_bonus = {
+					name = SOV_pc_of_mechanical_engineering_name_default
+					bonus = 1
+					ahead_reduction = 1
+					uses = 2
+					category = motorized_equipment
+				}
+				division_template = {
+					name = "Light Tank template 2"			# Rifle Division
+					division_names_group = SOV_ARM_01
+					is_locked = no
+					priority = 1
+					regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+
+						light_tank_destroyer_brigade = { x = 1 y = 0 }
+						light_tank_destroyer_brigade = { x = 1 y = 1 }
+						light_tank_destroyer_brigade = { x = 1 y = 2 }
+						light_tank_destroyer_brigade = { x = 1 y = 3 }
+						light_tank_destroyer_brigade = { x = 1 y = 4 }
+
+						light_tank_destroyer_brigade = { x = 2 y = 0 }
+						light_tank_destroyer_brigade = { x = 2 y = 1 }
+						light_tank_destroyer_brigade = { x = 2 y = 2 }
+						light_tank_destroyer_brigade = { x = 2 y = 3 }
+						light_tank_destroyer_brigade = { x = 2 y = 4 }
+
+						light_tank_destroyer_brigade = { x = 3 y = 0 }
+						light_tank_destroyer_brigade = { x = 3 y = 1 }
+						light_tank_destroyer_brigade = { x = 3 y = 2 }
+						light_tank_destroyer_brigade = { x = 3 y = 3 }
+						light_tank_destroyer_brigade = { x = 3 y = 4 }
+
+						heavy_tank_destroyer_brigade = { x = 4 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						anti_air = { x = 0 y = 2 }
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = LSM_startup.4
+	title = LSM_startup.3.t
+	desc = LSM_startup.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = LSM_startup.4.a
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = {
+				set_country_flag = superior_firepower_low
+				division_template = {
+					name = "Infantry template 7"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						anti_tank = { x = 0 y = 2 }
+						engineer = { x = 0 y = 3 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.4.b
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = { set_country_flag = superior_firepower_high }
+		}
+	}
+
+	option = {
+		name = LSM_startup.4.c
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = { set_country_flag = mech_tank_test }
+			SOV = { set_country_flag = superior_firepower_low }
+			SOV = { set_technology = { mechanised_infantry = 1 } }
+			SOV = { add_ideas = idea_JUNO_truck_production_cost }
+		}
+	}
+
+	option = {
+		name = LSM_startup.4.e
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = {
+				set_country_flag = superior_firepower_mech
+				division_template = {
+					name = "Infantry template 7"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						anti_tank = { x = 0 y = 2 }
+						engineer = { x = 0 y = 3 }
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = LSM_startup.3
+	title = LSM_startup.3.t
+	desc = LSM_startup.3.d
+
+	is_triggered_only = yes
+	option = {
+		name = LSM_startup.82.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 200
+				GER = { is_ai = no }
+			}
+		}
+		trigger = {
+			tag = GER
+		}
+		custom_effect_tooltip = LSM_startup_82_a_tt
+		hidden_effect = {
+			SOV = {
+				set_country_flag = pure_infantry
+
+				division_template = {
+					name = "Infantry 1936 A"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+
+						infantry = { x = 4 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						anti_air = { x = 0 y = 2 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.3.a
+		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			SOV = { set_country_flag = mass_assault_standard }
+			SOV = {
+				division_template = {
+					name = "Infantry template 2"			# Rifle Division
+					division_names_group = GER_INF_01
+					is_locked = no
+					priority = 1
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						anti_air_brigade = { x = 4 y = 0 }
+						anti_tank_brigade = { x = 4 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.3.b
+		ai_chance = {
+			factor = 15
+		}
+		hidden_effect = {
+			SOV = { set_country_flag = mass_assault_meatwall }
+			SOV = {
+				division_template = {
+					name = "Infantry template 2"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 0 }
+						anti_tank_brigade = { x = 3 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						anti_air = { x = 0 y = 2 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.10.f
+		ai_chance = {
+			factor = 50
+		}
+		hidden_effect = {
+			SOV = {
+				set_country_flag = spacemarine
+				division_template = {
+					name = "Infantry template 3"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				division_template = {
+					name = "Infantry template 4"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						heavy_tank_destroyer_brigade = { x = 3 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+						anti_tank = { x = 0 y = 2 }
+						artillery = { x = 0 y = 3 }
+					}
+				}
+				division_template = {
+					name = "Infantry template 5"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						light_tank_destroyer_brigade = { x = 2 y = 0 }
+						light_tank_destroyer_brigade = { x = 3 y = 0 }
+						light_tank_destroyer_brigade = { x = 3 y = 1 }
+						heavy_tank_destroyer_brigade = { x = 4 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						anti_air = { x = 0 y = 1 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.3.e
+		ai_chance = {
+			factor = 25
+		}
+		trigger = {
+			always = no
+		}
+		hidden_effect = {
+			SOV = { set_country_flag = mech_brick }
+		}
+	}
+}
+
+country_event = {
+	id = LSM_startup.5
+	title = LSM_startup.3.t
+	desc = LSM_startup.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = LSM_startup.5.c
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = {
+				set_country_flag = grand_battleplan_15w
+				division_template = {
+					name = "Infantry template 7"			# Rifle Division
+					division_names_group = SOV_INF_01
+					is_locked = no
+					priority = 1
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.5.a
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = { set_country_flag = grand_battleplan_30w }
+		}
+	}
+
+	option = {
+		name = LSM_startup.5.b
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = { set_country_flag = grand_battleplan_35w }
+		}
+	}
+
+	option = {
+		name = LSM_startup.3.e
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			SOV = { set_country_flag = mech_brick }
+		}
+	}
+}
+
+country_event = {
+	id = LSM_startup.83
+	title = LSM_startup.82.t
+	desc = LSM_startup.82.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = LSM_startup.82.a
+		set_country_flag = civ_1
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				SOV_no_imminent_threat = yes
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.82.a
+		set_country_flag = civ_2
+		trigger = {
+			NOT = { has_global_flag = mp_difficulty }
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				SOV_no_imminent_threat = yes
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.82.a
+		set_country_flag = civ_3
+		trigger = {
+			NOT = { has_global_flag = mp_difficulty }
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				SOV_no_imminent_threat = no
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.82.a
+		set_country_flag = mil_1
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				SOV_no_imminent_threat = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = LSM_startup.82
+	title = LSM_startup.82.t
+	desc = LSM_startup.82.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = LSM_startup.82.a
+		set_country_flag = pure_infantry
+		ai_chance = {
+			factor = 25
+		}
+		division_template = {
+			name = "Infantry 1936 G"			# Rifle Division
+			division_names_group = SOV_INF_01
+			is_locked = no
+			priority = 1
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+
+				infantry = { x = 3 y = 0 }
+
+				infantry = { x = 4 y = 0 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = { x = 0 y = 1 }
+				anti_air = { x = 0 y = 2 }
+			}
+		}
+	}
+
+	option = {
+		name = LSM_startup.82.b
+		ai_chance = {
+			factor = 70
+		}
+		country_event = { id = LSM_startup.1 }
+	}
+}
