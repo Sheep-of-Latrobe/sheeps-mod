@@ -1,0 +1,24 @@
+SOV_dominance_fleet_1 = {
+	required_taskforces = {
+		SOV_StrikeForce_1 = 1
+		SOV_PatrolReconForce_1 = 10
+	}
+	optional_taskforces = {
+		SOV_StrikeForce_2 = 5
+		SOV_PatrolReconForce_1 = 10
+		SOV_PatrolReconForce_2 = 2
+	}
+}
+
+SOV_dominance_fleet_2 = {
+	required_taskforces = {
+		SOV_StrikeForce_3 = 1
+		SOV_PatrolReconForce_1 = 2
+	}
+	optional_taskforces = {
+		SOV_StrikeForce_2 = 5
+		SOV_StrikeForce_3 = 2
+		SOV_PatrolReconForce_1 = 10
+		SOV_PatrolReconForce_2 = 2
+	}
+}

@@ -1,0 +1,24 @@
+GER_dominance_fleet_1 = {
+	required_taskforces = {
+		GER_StrikeForce_1 = 1
+		GER_PatrolReconForce_1 = 10
+	}
+	optional_taskforces = {
+		GER_StrikeForce_2 = 5
+		GER_PatrolReconForce_1 = 10
+		GER_PatrolReconForce_2 = 2
+	}
+}
+
+GER_dominance_fleet_2 = {
+	required_taskforces = {
+		GER_StrikeForce_3 = 1
+		GER_PatrolReconForce_1 = 2
+	}
+	optional_taskforces = {
+		GER_StrikeForce_2 = 5
+		GER_StrikeForce_3 = 2
+		GER_PatrolReconForce_1 = 10
+		GER_PatrolReconForce_2 = 2
+	}
+}
