@@ -6640,6 +6640,28 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = USA
+							original_tag = GER
+							original_tag = ITA
+							original_tag = SOV
+							original_tag = ENG
+							original_tag = FRA
+							original_tag = JAP
+						}
+					}
+				}
+				ROOT = {
+					set_country_flag = {
+						flag = has_recent_naval_invasion
+						days = 125
+						value = 1
+					}
+				}
+			}
 	 	}
 	 	effect = {
 		 	if = {

@@ -2089,3 +2089,120 @@ default_assign_supportive_scientist = {
 		value = 25
 	}
 }
+
+
+
+default_naval_invasion_range = {
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = GER
+			original_tag = ITA
+			original_tag = SOV
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = JAP
+		}
+	}
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = {
+			NOT = {
+				OR = {
+					any_state = {
+						controller = { is_ally_with = FROM.FROM }
+						OR = {
+							is_coastal = yes
+							is_island_state = yes
+						}
+						distance_to = {
+							target = ROOT
+							value < 3000
+						}
+					}
+					AND = {
+						distance_to = {
+							target = 629
+							value < 1200
+						}
+					}
+					AND = {
+						distance_to = {
+							target = 630
+							value < 1200
+						}
+					}
+					AND = {
+						distance_to = {
+							target = 385
+							value < 800
+						}
+					}
+					AND = {
+						distance_to = {
+							target = 642
+							value < 800
+						}
+					}
+					AND = {
+						distance_to = {
+							target = 757
+							value < 1000
+						}
+					}
+				}
+			}
+		}
+		value = -2000
+	}
+}
+
+default_refresh_naval_invasion_orders = {
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = GER
+			original_tag = ITA
+			original_tag = SOV
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = JAP
+		}
+	}
+	enable = {
+		has_war = yes
+		is_major = yes
+		OR = {
+			has_country_flag = {
+				flag = has_recent_naval_invasion
+				days > 120
+			}
+			NOT = { has_country_flag = has_recent_naval_invasion }
+		}
+		set_temp_variable = { reset_day = global.num_days }
+		modulo_temp_variable = { reset_day = 120 }
+		check_variable = { reset_day < 2 }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invasion_unit_request
+		country_trigger = { always = yes }
+		value = -9999
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		state_trigger = { always = yes }
+		value = -9999
+	}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = -9999
+	}
+}
