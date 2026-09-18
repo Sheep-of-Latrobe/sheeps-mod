@@ -1586,9 +1586,6 @@ technologies = {
 			air_range = 0.25
 		}
 
-		category_rocket_artillery = {
-			soft_attack = 0.1
-		}
 		#rocket_artillery = {
 		#	soft_attack = 0.1
 		#}
@@ -1601,6 +1598,9 @@ technologies = {
 		#motorized_rocket_brigade = {
 		#	soft_attack = 0.1
 		#}
+		category_rocket_artillery = {
+        	soft_attack = 0.1
+        }
 		rocket_battery = {
 			soft_attack = 0.05
 		}

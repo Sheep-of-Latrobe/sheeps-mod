@@ -32,7 +32,6 @@ INS_REP_UNION = {
     color = rgb { 176 24 35 }
     color_ui = rgb { 176 24 35 }
 }
-
 INS_aslia = {
 	color = rgb { 101 163 145 }
 	color_ui = rgb { 101 163 145 }
@@ -1925,4 +1924,9 @@ CZE_first_monarchy_color = {
 AST_australasia = {
 	color = rgb { 0 102 180 }
 	color_ui = rgb { 0 102 180 }
+}
+
+AST_monarchy = {
+	color = rgb { 218 165 32 }
+	color_ui = rgb { 218 165 32 }
 }

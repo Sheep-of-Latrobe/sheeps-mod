@@ -51,7 +51,6 @@ mobile_infantry = {
         combined_arms_planning = {
             category_all_infantry = {
                 max_organisation = 10
-                soft_attack = 0.1
                 maximum_speed = 0.05
             }
         }
@@ -60,7 +59,7 @@ mobile_infantry = {
                 max_organisation = 20
             }
 			category_regimental_support_artillery = {
-                soft_attack = 0.10
+                soft_attack = 0.1
                 breakthrough = 0.05
                 defense = 0.05
             }
@@ -68,7 +67,7 @@ mobile_infantry = {
         delegated_authority = {
             category_vehicle_infantry = {
                 default_morale = 0.1
-                breakthrough = 0.1
+                soft_attack = 0.1
             }
         }
         maneuver_warfare = {
@@ -182,7 +181,7 @@ large_unit_tactics = {
    
     #OTHER BASE REWARDS
     
-    category_light_infantry = {
+    category_all_infantry = {
         supply_consumption = -0.01
     }
 
@@ -205,7 +204,7 @@ large_unit_tactics = {
         }
         large_front_offensive = {
         #4
-            category_light_infantry = {
+            category_all_infantry = {
                 max_organisation = 10
                 soft_attack = 0.1
             }
@@ -279,7 +278,6 @@ assault_infantry = {
             anti_air_battery = {
                 air_attack = 0.05
             }
-
         }
 
         integrated_support_batteries = {
@@ -299,7 +297,6 @@ assault_infantry = {
                 max_organisation = 20
                 air_attack = 0.05
             }
-
         }
         breakthrough_fireteams = {
         #4
@@ -357,7 +354,6 @@ assault_infantry = {
                     soft_attack = 0.1
                 }
             }
-
         }
     }
 }
@@ -438,7 +434,8 @@ mounted_infantry = {
 		
 		beasts_of_war = {
             category_cavalry = {
-                maximum_speed = 0.4  
+                maximum_speed = 0.4
+                max_strength = 0.05
             }
             recon = {
                 maximum_speed = 0.4
@@ -805,7 +802,7 @@ peoples_war = {
 		
         quick_decision_offensive_warfare = {
         #3
-            mastery = 50        
+            mastery = 50
             militia = {
                initiative = 0.015
                max_organisation = 10
