@@ -25545,8 +25545,10 @@ focus_tree = {
 			NOT = {
 				has_war_with = SOV
 				SOV = {
-					has_government = neutrality
-					has_government = fascism
+					OR = {
+						has_government = neutrality
+						has_government = fascism
+					}
 				}
 			}
 		}

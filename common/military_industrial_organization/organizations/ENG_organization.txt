@@ -252,9 +252,18 @@ ENG_harland_wolff_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_harland_wolff
 	
-	allowed = {	
-		tag = ENG
-		has_dlc = "Arms Against Tyranny"
+	allowed = {
+		OR = {
+			AND = {
+				tag = ENG
+				has_dlc = "Arms Against Tyranny"
+			}
+
+			AND = {
+				original_tag = AST
+				has_dlc = "Thunder at Our Gates"
+			}
+		}
 	}
 
 	override_trait = {
@@ -266,10 +275,32 @@ ENG_harland_wolff_organization = {
 
 	visible = {
 		IF = {
-			limit = { FROM = { original_tag = ENG } }
-			hidden_trigger = {
-				FROM = { is_ai = no }
-			}	
+			limit = {
+				FROM = { original_tag = AST }
+			}
+			FROM = {
+				OR = {
+					has_idea = AST_monarchist_intervention_spirit
+					has_completed_focus = AST_for_crown_and_empire
+				}
+			}
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ENG } }
+			}
+			FROM = { NOT = { has_war_with = ENG } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = AST }
+			}
+			FROM = { has_country_flag = AST_harland_wolff_mio_trigger }
 		}
 	}
 

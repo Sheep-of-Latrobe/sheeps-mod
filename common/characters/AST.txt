@@ -321,8 +321,23 @@ characters={
 				AST_motherland_advocate_pa
 			}
 			available = {
-				is_country_leader = no
-				has_completed_focus = AST_in_from_the_cold
+				IF = {
+					limit = {
+						OR = {
+							has_idea = AST_monarchist_intervention_spirit
+							has_completed_focus = AST_for_crown_and_empire
+						}
+					}
+					NOT = {
+						has_completed_focus = AST_for_crown_and_empire
+					}
+					is_country_leader = no
+					has_completed_focus = AST_in_from_the_cold
+				}
+				ELSE = {
+					is_country_leader = no
+					has_completed_focus = AST_in_from_the_cold
+				}
 			}
 		}
 	}
@@ -416,7 +431,7 @@ characters={
 		}		
 	}
 
-	AST_eric_campbell={ #BASEGAME ONLY
+	AST_eric_campbell={
 		name=AST_eric_campbell
 		portraits={
 			civilian={
@@ -1755,7 +1770,19 @@ characters={
 				original_tag = AST
 			}
 			available = {
-				has_completed_focus = AST_australian_command
+				IF = {
+					limit = {
+						OR = {
+							has_idea = AST_monarchist_intervention_spirit
+							has_completed_focus = AST_for_crown_and_empire
+						}
+					}
+					has_completed_focus = AST_the_councils_advice
+					has_country_flag = AST_president_pankhurst_walsh_flag
+				}
+				ELSE = {
+					has_completed_focus = AST_australian_command
+				}
 			}
 			traits = {
 				navy_chief_naval_aviation_2
@@ -1930,7 +1957,7 @@ characters={
 				cost = 100
 
 				ai_will_do = {
-					factor = 25
+					factor = 1
 				}
 			}	
 		}
@@ -1954,7 +1981,7 @@ characters={
 					original_tag = AST
 				}
 				traits = {
-					air_air_combat_training_2
+					air_chief_old_guard
 				}
 				cost = 100
 				ai_will_do = {

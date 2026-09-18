@@ -725,8 +725,5 @@ tank_destroyer_force = {
                 max_organisation = 5
 			}
         }
-
-
-
     }
 }
