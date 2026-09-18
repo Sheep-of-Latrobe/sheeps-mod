@@ -30,12 +30,12 @@ sub_units = {
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.3
-		max_strength = 0.6
+		max_strength = 0.5
 		training_time = 180
 		weight = 1
 		supply_consumption = 0.2
-
-		breakthrough = -0.42
+		defense = 0.25
+		breakthrough = -0.75
 		ap_attack = 0.15
 		suppression = 1.0
 
@@ -97,13 +97,14 @@ sub_units = {
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.3
-		max_strength = 0.6
+		max_strength = 0.5
 		training_time = 180
 		weight = 1.25
 		supply_consumption = 0.22
-
-		breakthrough = -0.25
-		ap_attack = 0.15
+		defense = 0.25
+		breakthrough = -0.75
+		ap_attack = 0.05
+		soft_attack = -0.1
 		suppression = 1.25
 
 		forest = {
@@ -150,8 +151,8 @@ sub_units = {
 			armor
 			anti_tank
 		}
-		
-		group = armor
+
+		group = armor_combat_support
 		
 		categories = {
 			category_front_line
@@ -169,12 +170,13 @@ sub_units = {
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.3
-		max_strength = 0.6
+		max_strength = 0.5
 		weight = 1.5
 		supply_consumption = 0.3
-
-		breakthrough = -0.25
-		ap_attack = 0.15
+		defense = 0.25
+		breakthrough = -0.75
+		ap_attack = 0.05
+		soft_attack = -0.1
 		suppression = 1.25
 		
 		forest = {
@@ -244,13 +246,14 @@ sub_units = {
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.3
-		max_strength = 0.6
+		max_strength = 0.5
 		training_time = 180
 		weight = 1.75
 		supply_consumption = 0.4
-
-		breakthrough = -0.25
-		ap_attack = 0.15
+		defense = 0.25
+		breakthrough = -0.75
+		ap_attack = 0.05
+		soft_attack = -0.1
 		suppression = 1.25
 
 		forest = {
@@ -299,8 +302,8 @@ sub_units = {
 			armor
 			anti_tank
 		}
-		
-		group = armor
+		divisional = no
+		group = armor_combat_support
 		
 		categories = {
 			category_front_line
@@ -318,13 +321,14 @@ sub_units = {
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.3
-		max_strength = 0.6
+		max_strength = 0.5
 		training_time = 180
 		weight = 1.5
 		supply_consumption = 0.25
-		
-		breakthrough = -0.25
-		ap_attack = 0.15
+		defense = 0.25
+		breakthrough = -0.75
+		ap_attack = 0.05
+		soft_attack = -0.1
 		suppression = 1.25
 		
 		forest = {
@@ -359,7 +363,7 @@ sub_units = {
 	}
 
 	##TD reg support
-# TODO: Sheep, look at this unit and see if values are appropriate
+
 	light_tank_destroyer_support = {
 		abbreviation = "LTD"
 		sprite = "light_armor"
@@ -381,7 +385,7 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			category_tank_destroyers
+			#category_tank_destroyers
 			category_support_battalions
 			category_regimental_support_battalions
 			category_tank_destroyer_regimental_support
@@ -390,25 +394,26 @@ sub_units = {
 		divisional = no
 
 		need = {
-			light_tank_destroyer_chassis = 10
+			light_tank_destroyer_chassis = 15
 		}
 		manpower = 180
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 0.2
+		max_strength = 0.1
 		training_time = 120
-		own_equipment_fuel_consumption_mult = 0.33
+		own_equipment_fuel_consumption_mult = 0.4
 		weight = 0.3
 		supply_consumption = 0.06
 
-		breakthrough = -0.75
-		defense = -0.25
-		hard_attack = -0.33
+		breakthrough = -0.9
+		defense = -0.33
+		soft_attack = -0.66
+		hard_attack = -0.5
 		suppression = 0.25
-		armor_value = -0.33
+		armor_value = -0.66
 		
 	}
-# TODO: Sheep, look at this unit and see if values are appropriate
+
 	medium_tank_destroyer_support = {
 		abbreviation = "MTD"
 		sprite = "medium_armor"
@@ -431,7 +436,7 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			category_tank_destroyers
+			#category_tank_destroyers
 			category_support_battalions
 			category_regimental_support_battalions
 			category_tank_destroyer_regimental_support
@@ -439,26 +444,26 @@ sub_units = {
 
 
 		need = {
-			medium_tank_destroyer_chassis = 10
+			medium_tank_destroyer_chassis = 15
 		}
 		manpower = 180
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 0.2
+		max_strength = 0.1
 		training_time = 180
-		own_equipment_fuel_consumption_mult = 0.33
+		own_equipment_fuel_consumption_mult = 0.4
 		weight = 0.4
 		supply_consumption = 0.07
 
-		breakthrough = -0.7
-		defense = -0.25
-		soft_attack = -0.33
-		hard_attack = -0.33
+		breakthrough = -0.9
+		defense = -0.33
+		soft_attack = -0.66
+		hard_attack = -0.5
 		suppression = 0.25
-		armor_value = -0.33
+		armor_value = -0.66
 		
 	}
-# TODO: Sheep, look at this unit and see if values are appropriate
+
 	heavy_tank_destroyer_support = {
 		abbreviation = "HTD"
 		sprite = "heavy_armor"
@@ -481,30 +486,30 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			category_tank_destroyers
+			#category_tank_destroyers
 			category_support_battalions
 			category_regimental_support_battalions
 			category_tank_destroyer_regimental_support
 		}
 
 		need = {
-			heavy_tank_destroyer_chassis = 10
+			heavy_tank_destroyer_chassis = 15
 		}
 		manpower = 180
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 0.2
+		max_strength = 0.1
 		training_time = 120
-		own_equipment_fuel_consumption_mult = 0.33
+		own_equipment_fuel_consumption_mult = 0.4
 		weight = 0.5
 		supply_consumption = 0.09
 
-		breakthrough = -0.65
-		defense = -0.25
-		soft_attack = -0.33
-		hard_attack = -0.33
+		breakthrough = -0.9
+		defense = -0.33
+		soft_attack = -0.66
+		hard_attack = -0.5
 		suppression = 0.25
-		armor_value = -0.33
+		armor_value = -0.66
 	}
 
 	modern_tank_destroyer_support = {
@@ -528,30 +533,30 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_army
-			category_tank_destroyers
+			#category_tank_destroyers
 			category_support_battalions
 			category_regimental_support_battalions
 			category_tank_destroyer_regimental_support
 		}
 
 		need = {
-			modern_tank_destroyer_chassis = 10
+			modern_tank_destroyer_chassis = 15
 		}
 		manpower = 180
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 0.2
+		max_strength = 0.1
 		training_time = 120
-		own_equipment_fuel_consumption_mult = 0.33
+		own_equipment_fuel_consumption_mult = 0.4
 		weight = 0.5
 		supply_consumption = 0.08
 		
-		breakthrough = -0.6
-		defense = -0.25
-		soft_attack = -0.33
-		hard_attack = -0.33
+		breakthrough = -0.9
+		defense = -0.33
+		soft_attack = -0.66
+		hard_attack = -0.5
 		suppression = 0.25
-		armor_value = -0.33
+		armor_value = -0.66
 		
 	}
 }

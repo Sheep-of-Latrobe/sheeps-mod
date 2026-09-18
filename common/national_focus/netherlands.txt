@@ -2391,13 +2391,6 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 7
 			has_full_control_of_state = 36
-			INS = {
-				exists = yes
-				is_subject_of = HOL
-				has_full_control_of_state = 1058
-				has_full_control_of_state = 1051
-				has_full_control_of_state = 335
-			}
 		}
 		mutually_exclusive = { focus = HOL_curtail_colonial_autonomy focus = HOL_curtail_colonial_autonomy_taog }
 		prerequisite = { focus = HOL_expand_the_artillerieinrichtingen }
