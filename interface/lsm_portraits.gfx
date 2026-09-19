@@ -16,18 +16,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_portrait_ngo_dinh_diem"
-		texturefile = "gfx/leaders/VIN/portrait_VIN_ngo_dinh_diem.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_portrait_jean_decoux"
 		texturefile = "gfx/leaders/VIN/portrait_VIN_jean_decoux.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_portrait_bao_dai"
-		texturefile = "gfx/leaders/VIN/portrait_VIN_bao_dai.dds"
 	}
 	
 	spriteType = {

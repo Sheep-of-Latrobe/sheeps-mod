@@ -330,12 +330,12 @@ technologies = {
 			
 			modifier = {
 				factor = 50
-				has_focus_tree = equipment_effort_2
+				has_completed_focus = equipment_effort_2
 			}
 			
 			modifier = {
 				factor = 50
-				has_focus_tree = equipment_effort_3
+				has_completed_focus = equipment_effort_3
 			}
 			
 			modifier = {

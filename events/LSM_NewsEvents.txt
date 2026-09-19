@@ -521,7 +521,7 @@ news_event = {
 	id = lsm_news.1000
 	title = lsm_news.1000.t
 	desc = lsm_news.1000.d
-	picture = GFX_news_event_soviet_tanks
+	picture = GFX_news_event_soviet_soldiers_ruins
 	
 	major = yes
 	

@@ -8401,7 +8401,6 @@ last_stand_decision = {
 		}
 
 		complete_effect = {
-			complete_national_focus = GER_integrate_war_economies
 			add_ideas = GER_prepare_for_barbarossa
 			army_experience = 50
 		}
