@@ -4,7 +4,6 @@
 peace_ai_desires = {
 
     	one_v_one_annex_everything = {
-        	category = events_or_focuses
        		peace_action_type = { take_states }
 
         	enable = {
@@ -23,7 +22,6 @@ peace_ai_desires = {
 	}
 
     	generic_the_last_few_states_desire = {
-        	category = events_or_focuses
        		peace_action_type = { take_states }
 
         	enable = {

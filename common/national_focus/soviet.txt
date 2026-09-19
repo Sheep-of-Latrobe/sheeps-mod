@@ -4279,7 +4279,7 @@ focus_tree = {
         					skills = {
             						specialization_land = 2
         					}
-        					traits = { }
+								traits = { scientist_trait_armored_specialist }
     					}
 				}
 				IF = {

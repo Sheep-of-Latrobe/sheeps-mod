@@ -108,4 +108,4 @@ default = {
 	military_industrial_organization_research_bonus = 1
 	military_industrial_organization_size_up_requirement = 1
 	military_industrial_organization_task_capacity = 1
-}}
+}
